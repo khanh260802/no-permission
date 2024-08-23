@@ -1,3 +1,4 @@
+import { FunctionComponent } from "react";
 import {
   Select,
   InputLabel,
@@ -6,10 +7,13 @@ import {
   FormControl,
   InputAdornment,
 } from "@mui/material";
-import PropTypes from "prop-types";
 import "./Header.css";
 
-const Header = ({ className = "" }) => {
+export type HeaderType = {
+  className?: string;
+};
+
+const Header: FunctionComponent<HeaderType> = ({ className = "" }) => {
   return (
     <header className={`header ${className}`}>
       <div className="breadcrumbs-container">
@@ -166,10 +170,6 @@ const Header = ({ className = "" }) => {
       </FormControl>
     </header>
   );
-};
-
-Header.propTypes = {
-  className: PropTypes.string,
 };
 
 export default Header;

@@ -1,8 +1,14 @@
+import { FunctionComponent } from "react";
 import PageHeader from "./PageHeader";
-import PropTypes from "prop-types";
 import "./DashboardHeader.css";
 
-const DashboardHeader = ({ className = "" }) => {
+export type DashboardHeaderType = {
+  className?: string;
+};
+
+const DashboardHeader: FunctionComponent<DashboardHeaderType> = ({
+  className = "",
+}) => {
   return (
     <div className={`dashboard-header ${className}`}>
       <PageHeader />
@@ -27,10 +33,6 @@ const DashboardHeader = ({ className = "" }) => {
       </div>
     </div>
   );
-};
-
-DashboardHeader.propTypes = {
-  className: PropTypes.string,
 };
 
 export default DashboardHeader;

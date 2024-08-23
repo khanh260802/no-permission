@@ -1,5 +1,6 @@
 import DashboardHeader from "./DashboardHeader";
 import NoPermission from "./NoPermission";
+import EmptyIllustration from "./EmptyIllustration";
 import PropTypes from "prop-types";
 import "./Dashboard.css";
 
@@ -9,12 +10,7 @@ const Dashboard = ({ className = "" }) => {
       <DashboardHeader />
       <div className="no-permission-parent">
         <NoPermission />
-        <img
-          className="empty-illustration-icon"
-          loading="lazy"
-          alt=""
-          src="/empty-illustration.svg"
-        />
+        <EmptyIllustration />
       </div>
     </div>
   );

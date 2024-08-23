@@ -1,7 +1,13 @@
-import PropTypes from "prop-types";
+import { FunctionComponent } from "react";
 import "./InputSearch.css";
 
-const InputSearch = ({ className = "" }) => {
+export type InputSearchType = {
+  className?: string;
+};
+
+const InputSearch: FunctionComponent<InputSearchType> = ({
+  className = "",
+}) => {
   return (
     <div className={`input-search ${className}`}>
       <div className="search-input">
@@ -17,10 +23,6 @@ const InputSearch = ({ className = "" }) => {
       </div>
     </div>
   );
-};
-
-InputSearch.propTypes = {
-  className: PropTypes.string,
 };
 
 export default InputSearch;

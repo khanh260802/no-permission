@@ -1,8 +1,12 @@
+import { FunctionComponent } from "react";
 import InputSearch from "./InputSearch";
-import PropTypes from "prop-types";
 import "./TopNavbar.css";
 
-const TopNavbar = ({ className = "" }) => {
+export type TopNavbarType = {
+  className?: string;
+};
+
+const TopNavbar: FunctionComponent<TopNavbarType> = ({ className = "" }) => {
   return (
     <header className={`top-navbar ${className}`}>
       <img className="base-icon" alt="" src="/base.svg" />
@@ -97,10 +101,6 @@ const TopNavbar = ({ className = "" }) => {
       </div>
     </header>
   );
-};
-
-TopNavbar.propTypes = {
-  className: PropTypes.string,
 };
 
 export default TopNavbar;

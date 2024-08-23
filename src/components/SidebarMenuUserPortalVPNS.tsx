@@ -1,3 +1,4 @@
+import { FunctionComponent } from "react";
 import {
   Select,
   InputLabel,
@@ -7,10 +8,15 @@ import {
   InputAdornment,
   TextField,
 } from "@mui/material";
-import PropTypes from "prop-types";
 import "./SidebarMenuUserPortalVPNS.css";
 
-const SidebarMenuUserPortalVPNS = ({ className = "" }) => {
+export type SidebarMenuUserPortalVPNSType = {
+  className?: string;
+};
+
+const SidebarMenuUserPortalVPNS: FunctionComponent<
+  SidebarMenuUserPortalVPNSType
+> = ({ className = "" }) => {
   return (
     <div className={`sidebar-menuuser-portalvpn-s ${className}`}>
       <div className="sidebar-indicator">
@@ -1098,10 +1104,6 @@ const SidebarMenuUserPortalVPNS = ({ className = "" }) => {
       </div>
     </div>
   );
-};
-
-SidebarMenuUserPortalVPNS.propTypes = {
-  className: PropTypes.string,
 };
 
 export default SidebarMenuUserPortalVPNS;

@@ -1,7 +1,11 @@
-import PropTypes from "prop-types";
+import { FunctionComponent } from "react";
 import "./PageHeader.css";
 
-const PageHeader = ({ className = "" }) => {
+export type PageHeaderType = {
+  className?: string;
+};
+
+const PageHeader: FunctionComponent<PageHeaderType> = ({ className = "" }) => {
   return (
     <div className={`page-header ${className}`}>
       <div className="heading-breadcrumb">
@@ -33,10 +37,6 @@ const PageHeader = ({ className = "" }) => {
       </div>
     </div>
   );
-};
-
-PageHeader.propTypes = {
-  className: PropTypes.string,
 };
 
 export default PageHeader;

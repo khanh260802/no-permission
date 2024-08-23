@@ -1,12 +1,3 @@
-.empty-illustration-icon {
-  position: absolute;
-  top: 28px;
-  left: 508px;
-  width: 120px;
-  height: 180px;
-  overflow: hidden;
-  z-index: 1;
-}
 .no-permission-parent {
   align-self: stretch;
   height: 234px;
