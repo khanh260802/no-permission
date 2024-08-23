@@ -1,13 +1,7 @@
-import { FunctionComponent } from "react";
+import PropTypes from "prop-types";
 import "./PermissionContainer.css";
 
-export type PermissionContainerType = {
-  className?: string;
-};
-
-const PermissionContainer: FunctionComponent<PermissionContainerType> = ({
-  className = "",
-}) => {
+const PermissionContainer = ({ className = "" }) => {
   return (
     <div className={`permission-container ${className}`}>
       <div className="permission-content">
@@ -26,6 +20,10 @@ const PermissionContainer: FunctionComponent<PermissionContainerType> = ({
       </button>
     </div>
   );
+};
+
+PermissionContainer.propTypes = {
+  className: PropTypes.string,
 };
 
 export default PermissionContainer;
