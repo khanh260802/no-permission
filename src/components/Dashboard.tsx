@@ -1,10 +1,14 @@
+import { FunctionComponent } from "react";
 import DashboardHeader from "./DashboardHeader";
 import NoPermission from "./NoPermission";
 import EmptyIllustration from "./EmptyIllustration";
-import PropTypes from "prop-types";
 import "./Dashboard.css";
 
-const Dashboard = ({ className = "" }) => {
+export type DashboardType = {
+  className?: string;
+};
+
+const Dashboard: FunctionComponent<DashboardType> = ({ className = "" }) => {
   return (
     <div className={`dashboard ${className}`}>
       <DashboardHeader />
@@ -14,10 +18,6 @@ const Dashboard = ({ className = "" }) => {
       </div>
     </div>
   );
-};
-
-Dashboard.propTypes = {
-  className: PropTypes.string,
 };
 
 export default Dashboard;

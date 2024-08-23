@@ -1,8 +1,14 @@
+import { FunctionComponent } from "react";
 import PermissionContainer from "./PermissionContainer";
-import PropTypes from "prop-types";
 import "./NoPermission.css";
 
-const NoPermission = ({ className = "" }) => {
+export type NoPermissionType = {
+  className?: string;
+};
+
+const NoPermission: FunctionComponent<NoPermissionType> = ({
+  className = "",
+}) => {
   return (
     <div className={`no-permission ${className}`}>
       <div className="authen-illustration">
@@ -37,10 +43,6 @@ const NoPermission = ({ className = "" }) => {
       <PermissionContainer />
     </div>
   );
-};
-
-NoPermission.propTypes = {
-  className: PropTypes.string,
 };
 
 export default NoPermission;

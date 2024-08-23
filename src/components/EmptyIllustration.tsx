@@ -1,7 +1,13 @@
-import PropTypes from "prop-types";
+import { FunctionComponent } from "react";
 import "./EmptyIllustration.css";
 
-const EmptyIllustration = ({ className = "" }) => {
+export type EmptyIllustrationType = {
+  className?: string;
+};
+
+const EmptyIllustration: FunctionComponent<EmptyIllustrationType> = ({
+  className = "",
+}) => {
   return (
     <img
       className={`empty-illustration-icon ${className}`}
@@ -10,10 +16,6 @@ const EmptyIllustration = ({ className = "" }) => {
       src="/empty-illustration.svg"
     />
   );
-};
-
-EmptyIllustration.propTypes = {
-  className: PropTypes.string,
 };
 
 export default EmptyIllustration;
