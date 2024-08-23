@@ -1,1097 +1,4604 @@
-import {
-  Select,
-  InputLabel,
-  MenuItem,
-  FormHelperText,
-  FormControl,
-  InputAdornment,
-  TextField,
-} from "@mui/material";
 import PropTypes from "prop-types";
-import "./SidebarMenuUserPortalVPNS.css";
 
 const SidebarMenuUserPortalVPNS = ({ className = "" }) => {
   return (
-    <div className={`sidebar-menuuser-portalvpn-s ${className}`}>
-      <div className="sidebar-indicator">
-        <div className="indicator" />
+    <div
+      style={{
+        width: "280px",
+        boxShadow: "0px 4px 8px rgba(0, 82, 204, 0.15)",
+        borderRadius: "4px",
+        backgroundColor: "#fff",
+        display: "flex",
+        flexDirection: "row",
+        alignItems: "flex-end",
+        justifyContent: "flex-start",
+        padding: "16px 20px 29px 0px",
+        boxSizing: "border-box",
+        gap: "12px",
+        textAlign: "left",
+        fontSize: "14px",
+        color: "#595959",
+        fontFamily: "'Open Sans'",
+      }}
+      className={className}
+    >
+      <div
+        style={{
+          height: "582px",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "flex-start",
+          justifyContent: "flex-start",
+        }}
+      >
+        <div
+          style={{
+            width: "8px",
+            height: "40px",
+            position: "relative",
+            borderRadius: "0px 4px 4px 0px",
+            backgroundColor: "#0052cc",
+          }}
+        />
       </div>
-      <div className="menu-items-container">
-        <div className="menu-group">
-          <div className="org">
-            <div className="line" />
-            <a className="menu-header">Overview</a>
-            <div className="menu">
-              <img className="base-icon3" alt="" />
+      <div
+        style={{
+          flex: "1",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "flex-start",
+          justifyContent: "flex-start",
+          gap: "24px",
+        }}
+      >
+        <div
+          style={{
+            alignSelf: "stretch",
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "flex-start",
+            justifyContent: "flex-start",
+          }}
+        >
+          <div
+            style={{
+              flex: "1",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "flex-start",
+              justifyContent: "flex-start",
+              gap: "8px",
+            }}
+          >
+            <div
+              style={{
+                width: "232px",
+                height: "1px",
+                position: "relative",
+                backgroundColor: "#d9d9d9",
+                display: "none",
+              }}
+            />
+            <a
+              style={{
+                textDecoration: "none",
+                position: "relative",
+                lineHeight: "22px",
+                fontWeight: "600",
+                color: "#8c8c8c",
+                display: "inline-block",
+                minWidth: "64px",
+              }}
+            >
+              Overview
+            </a>
+            <div
+              style={{
+                alignSelf: "stretch",
+                height: "40px",
+                position: "relative",
+                overflow: "hidden",
+                flexShrink: "0",
+              }}
+            >
               <img
-                className="px-navigation-arrow-right"
+                style={{
+                  position: "absolute",
+                  height: "100%",
+                  width: "100%",
+                  top: "0px",
+                  right: "0px",
+                  bottom: "0px",
+                  left: "0px",
+                  borderRadius: "4px",
+                  maxWidth: "100%",
+                  overflow: "hidden",
+                  maxHeight: "100%",
+                }}
+                alt=""
+              />
+              <img
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 6px)",
+                  right: "12px",
+                  width: "12px",
+                  height: "12px",
+                  overflow: "hidden",
+                  display: "none",
+                }}
                 alt=""
                 src="/12px--navigation--arrow-right.svg"
               />
-              <div className="home-menu-item">
+              <div
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 12px)",
+                  left: "16px",
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "flex-start",
+                  justifyContent: "flex-start",
+                  gap: "16px",
+                  zIndex: "1",
+                }}
+              >
                 <img
-                  className="px-iconly-chat"
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    objectFit: "cover",
+                    display: "none",
+                    minHeight: "24px",
+                  }}
                   alt=""
                   src="/24px--iconly--chat@2x.png"
                 />
                 <img
-                  className="material-symbolshome-outline-icon"
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    overflow: "hidden",
+                    flexShrink: "0",
+                    minHeight: "24px",
+                  }}
                   loading="lazy"
                   alt=""
                   src="/materialsymbolshomeoutlinerounded.svg"
                 />
-                <div className="home-menu-label">
-                  <a className="home">Home</a>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "flex-start",
+                    justifyContent: "flex-start",
+                    padding: "1px 0px 0px",
+                  }}
+                >
+                  <a
+                    style={{
+                      textDecoration: "none",
+                      position: "relative",
+                      lineHeight: "22px",
+                      fontWeight: "600",
+                      color: "inherit",
+                      display: "inline-block",
+                      minWidth: "41px",
+                    }}
+                  >
+                    Home
+                  </a>
                 </div>
               </div>
-              <img className="icon1" alt="" src="/icon1.svg" />
-            </div>
-            <div className="menu">
-              <img className="base-icon3" alt="" />
               <img
-                className="px-navigation-arrow-right"
+                style={{
+                  position: "absolute",
+                  height: "35%",
+                  width: "6.04%",
+                  top: "32.5%",
+                  right: "5.17%",
+                  bottom: "32.5%",
+                  left: "88.79%",
+                  maxWidth: "100%",
+                  overflow: "hidden",
+                  maxHeight: "100%",
+                  display: "none",
+                }}
+                alt=""
+                src="/icon1.svg"
+              />
+            </div>
+            <div
+              style={{
+                alignSelf: "stretch",
+                height: "40px",
+                position: "relative",
+                overflow: "hidden",
+                flexShrink: "0",
+              }}
+            >
+              <img
+                style={{
+                  position: "absolute",
+                  height: "100%",
+                  width: "100%",
+                  top: "0px",
+                  right: "0px",
+                  bottom: "0px",
+                  left: "0px",
+                  borderRadius: "4px",
+                  maxWidth: "100%",
+                  overflow: "hidden",
+                  maxHeight: "100%",
+                }}
+                alt=""
+              />
+              <img
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 6px)",
+                  right: "12px",
+                  width: "12px",
+                  height: "12px",
+                  overflow: "hidden",
+                  display: "none",
+                }}
                 alt=""
                 src="/12px--navigation--arrow-right.svg"
               />
-              <div className="home-menu-item">
+              <div
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 12px)",
+                  left: "16px",
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "flex-start",
+                  justifyContent: "flex-start",
+                  gap: "16px",
+                  zIndex: "1",
+                }}
+              >
                 <img
-                  className="px-iconly-chat"
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    objectFit: "cover",
+                    display: "none",
+                    minHeight: "24px",
+                  }}
                   alt=""
                   src="/24px--iconly--chat@2x.png"
                 />
                 <img
-                  className="horizontal-bar-chart-icon"
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    objectFit: "contain",
+                    minHeight: "24px",
+                  }}
                   loading="lazy"
                   alt=""
                   src="/horizontalbarchart@2x.png"
                 />
-                <div className="home-menu-label">
-                  <div className="tenant-dashboard">Tenant Dashboard</div>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "flex-start",
+                    justifyContent: "flex-start",
+                    padding: "1px 0px 0px",
+                  }}
+                >
+                  <div
+                    style={{
+                      position: "relative",
+                      lineHeight: "22px",
+                      fontWeight: "600",
+                      display: "inline-block",
+                      minWidth: "126px",
+                    }}
+                  >
+                    Tenant Dashboard
+                  </div>
                 </div>
               </div>
-              <img className="icon1" alt="" src="/icon1.svg" />
-            </div>
-            <div className="menu2">
-              <img className="rectangle-icon" alt="" />
               <img
-                className="px-navigation-arrow-right2"
+                style={{
+                  position: "absolute",
+                  height: "35%",
+                  width: "6.04%",
+                  top: "32.5%",
+                  right: "5.17%",
+                  bottom: "32.5%",
+                  left: "88.79%",
+                  maxWidth: "100%",
+                  overflow: "hidden",
+                  maxHeight: "100%",
+                  display: "none",
+                }}
+                alt=""
+                src="/icon1.svg"
+              />
+            </div>
+            <div
+              style={{
+                alignSelf: "stretch",
+                overflow: "hidden",
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "flex-start",
+                justifyContent: "space-between",
+                padding: "8px 12px 8px 16px",
+                position: "relative",
+                gap: "20px",
+              }}
+            >
+              <img
+                style={{
+                  height: "100%",
+                  width: "100%",
+                  position: "absolute",
+                  margin: "0",
+                  top: "0px",
+                  right: "0px",
+                  bottom: "0px",
+                  left: "0px",
+                  borderRadius: "4px",
+                  maxWidth: "100%",
+                  overflow: "hidden",
+                  maxHeight: "100%",
+                }}
+                alt=""
+              />
+              <img
+                style={{
+                  height: "12px",
+                  width: "12px",
+                  position: "relative",
+                  overflow: "hidden",
+                  flexShrink: "0",
+                  display: "none",
+                  zIndex: "1",
+                }}
                 alt=""
                 src="/12px--navigation--arrow-right.svg"
               />
-              <div className="px-iconly-chat-group">
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "flex-start",
+                  justifyContent: "flex-start",
+                  gap: "16px",
+                  zIndex: "1",
+                }}
+              >
                 <img
-                  className="px-iconly-chat"
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    objectFit: "cover",
+                    display: "none",
+                    minHeight: "24px",
+                  }}
                   alt=""
                   src="/24px--iconly--chat@2x.png"
                 />
                 <img
-                  className="icon-outline-endpoint"
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    minHeight: "24px",
+                  }}
                   alt=""
                   src="/icon-1.svg"
                 />
-                <div className="home-menu-label">
-                  <div className="iam">IAM</div>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "flex-start",
+                    justifyContent: "flex-start",
+                    padding: "1px 0px 0px",
+                  }}
+                >
+                  <div
+                    style={{
+                      position: "relative",
+                      lineHeight: "22px",
+                      fontWeight: "600",
+                      display: "inline-block",
+                      minWidth: "27px",
+                    }}
+                  >
+                    IAM
+                  </div>
                 </div>
               </div>
-              <div className="home-menu-badge">
-                <img className="icon4" alt="" src="/icon1.svg" />
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "flex-start",
+                  justifyContent: "flex-start",
+                  padding: "5px 0px 0px",
+                }}
+              >
+                <img
+                  style={{
+                    width: "14.5px",
+                    height: "14px",
+                    position: "relative",
+                    zIndex: "1",
+                  }}
+                  alt=""
+                  src="/icon1.svg"
+                />
               </div>
-              <img className="icon5" alt="" src="/icon2@2x.png" />
-            </div>
-            <div className="menu3">
-              <img className="base-icon3" alt="" />
               <img
-                className="px-navigation-arrow-right"
+                style={{
+                  height: "16px",
+                  width: "16px",
+                  position: "relative",
+                  objectFit: "contain",
+                  display: "none",
+                  zIndex: "4",
+                }}
+                alt=""
+                src="/icon2@2x.png"
+              />
+            </div>
+            <div
+              style={{
+                alignSelf: "stretch",
+                height: "40px",
+                position: "relative",
+                overflow: "hidden",
+                flexShrink: "0",
+                display: "none",
+              }}
+            >
+              <img
+                style={{
+                  position: "absolute",
+                  height: "100%",
+                  width: "100%",
+                  top: "0px",
+                  right: "0px",
+                  bottom: "0px",
+                  left: "0px",
+                  borderRadius: "4px",
+                  maxWidth: "100%",
+                  overflow: "hidden",
+                  maxHeight: "100%",
+                }}
+                alt=""
+              />
+              <img
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 6px)",
+                  right: "12px",
+                  width: "12px",
+                  height: "12px",
+                  overflow: "hidden",
+                  display: "none",
+                }}
                 alt=""
                 src="/12px--navigation--arrow-right.svg"
               />
-              <div className="px-iconly-chat-container">
+              <div
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 12px)",
+                  left: "16px",
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                  justifyContent: "flex-start",
+                  gap: "16px",
+                }}
+              >
                 <img
-                  className="px-iconly-chat"
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    objectFit: "cover",
+                    display: "none",
+                    minHeight: "24px",
+                  }}
                   alt=""
                   src="/24px--iconly--chat@2x.png"
                 />
-                <img className="icon-outline-endpoint" alt="" />
-                <div className="users">Users</div>
+                <img
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    minHeight: "24px",
+                  }}
+                  alt=""
+                />
+                <div
+                  style={{
+                    width: "39px",
+                    position: "relative",
+                    lineHeight: "22px",
+                    fontWeight: "600",
+                    display: "inline-block",
+                  }}
+                >
+                  Users
+                </div>
               </div>
-              <img className="icon1" alt="" src="/icon1.svg" />
-            </div>
-            <div className="menu3">
-              <img className="base-icon3" alt="" />
               <img
-                className="px-navigation-arrow-right"
+                style={{
+                  position: "absolute",
+                  height: "35%",
+                  width: "6.04%",
+                  top: "32.5%",
+                  right: "5.17%",
+                  bottom: "32.5%",
+                  left: "88.79%",
+                  maxWidth: "100%",
+                  overflow: "hidden",
+                  maxHeight: "100%",
+                  display: "none",
+                }}
+                alt=""
+                src="/icon1.svg"
+              />
+            </div>
+            <div
+              style={{
+                alignSelf: "stretch",
+                height: "40px",
+                position: "relative",
+                overflow: "hidden",
+                flexShrink: "0",
+                display: "none",
+              }}
+            >
+              <img
+                style={{
+                  position: "absolute",
+                  height: "100%",
+                  width: "100%",
+                  top: "0px",
+                  right: "0px",
+                  bottom: "0px",
+                  left: "0px",
+                  borderRadius: "4px",
+                  maxWidth: "100%",
+                  overflow: "hidden",
+                  maxHeight: "100%",
+                }}
+                alt=""
+              />
+              <img
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 6px)",
+                  right: "12px",
+                  width: "12px",
+                  height: "12px",
+                  overflow: "hidden",
+                  display: "none",
+                }}
                 alt=""
                 src="/12px--navigation--arrow-right.svg"
               />
-              <div className="px-iconly-chat-container">
+              <div
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 12px)",
+                  left: "16px",
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                  justifyContent: "flex-start",
+                  gap: "16px",
+                }}
+              >
                 <img
-                  className="px-iconly-chat"
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    objectFit: "cover",
+                    display: "none",
+                    minHeight: "24px",
+                  }}
                   alt=""
                   src="/24px--iconly--chat@2x.png"
                 />
-                <input className="icon8" type="checkbox" />
-                <div className="groups">Groups</div>
+                <input
+                  style={{
+                    margin: "0",
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    minHeight: "24px",
+                  }}
+                  type="checkbox"
+                />
+                <div
+                  style={{
+                    flex: "1",
+                    position: "relative",
+                    lineHeight: "22px",
+                    fontWeight: "600",
+                  }}
+                >
+                  Groups
+                </div>
               </div>
-              <img className="icon1" alt="" src="/icon1.svg" />
-            </div>
-            <div className="menu3">
-              <img className="base-icon3" alt="" />
               <img
-                className="px-navigation-arrow-right"
+                style={{
+                  position: "absolute",
+                  height: "35%",
+                  width: "6.04%",
+                  top: "32.5%",
+                  right: "5.17%",
+                  bottom: "32.5%",
+                  left: "88.79%",
+                  maxWidth: "100%",
+                  overflow: "hidden",
+                  maxHeight: "100%",
+                  display: "none",
+                }}
+                alt=""
+                src="/icon1.svg"
+              />
+            </div>
+            <div
+              style={{
+                alignSelf: "stretch",
+                height: "40px",
+                position: "relative",
+                overflow: "hidden",
+                flexShrink: "0",
+                display: "none",
+              }}
+            >
+              <img
+                style={{
+                  position: "absolute",
+                  height: "100%",
+                  width: "100%",
+                  top: "0px",
+                  right: "0px",
+                  bottom: "0px",
+                  left: "0px",
+                  borderRadius: "4px",
+                  maxWidth: "100%",
+                  overflow: "hidden",
+                  maxHeight: "100%",
+                }}
+                alt=""
+              />
+              <img
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 6px)",
+                  right: "12px",
+                  width: "12px",
+                  height: "12px",
+                  overflow: "hidden",
+                  display: "none",
+                }}
                 alt=""
                 src="/12px--navigation--arrow-right.svg"
               />
-              <div className="px-iconly-chat-container">
+              <div
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 12px)",
+                  left: "16px",
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                  justifyContent: "flex-start",
+                  gap: "16px",
+                }}
+              >
                 <img
-                  className="px-iconly-chat"
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    objectFit: "cover",
+                    display: "none",
+                    minHeight: "24px",
+                  }}
                   alt=""
                   src="/24px--iconly--chat@2x.png"
                 />
-                <img className="icon-outline-endpoint" alt="" />
-                <div className="roles">Roles</div>
+                <img
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    minHeight: "24px",
+                  }}
+                  alt=""
+                />
+                <div
+                  style={{
+                    width: "37px",
+                    position: "relative",
+                    lineHeight: "22px",
+                    fontWeight: "600",
+                    display: "inline-block",
+                  }}
+                >
+                  Roles
+                </div>
               </div>
-              <img className="icon1" alt="" src="/icon1.svg" />
-            </div>
-            <div className="row">
-              <img className="base-icon9" alt="" />
               <img
-                className="px-navigation-arrow-right"
+                style={{
+                  position: "absolute",
+                  height: "35%",
+                  width: "6.04%",
+                  top: "32.5%",
+                  right: "5.17%",
+                  bottom: "32.5%",
+                  left: "88.79%",
+                  maxWidth: "100%",
+                  overflow: "hidden",
+                  maxHeight: "100%",
+                  display: "none",
+                }}
+                alt=""
+                src="/icon1.svg"
+              />
+            </div>
+            <div
+              style={{
+                alignSelf: "stretch",
+                height: "40px",
+                position: "relative",
+                borderRadius: "10px",
+                overflow: "hidden",
+                flexShrink: "0",
+              }}
+            >
+              <img
+                style={{
+                  position: "absolute",
+                  height: "100%",
+                  width: "100%",
+                  top: "0px",
+                  right: "0px",
+                  bottom: "0px",
+                  left: "0px",
+                  borderRadius: "10px",
+                  maxWidth: "100%",
+                  overflow: "hidden",
+                  maxHeight: "100%",
+                }}
+                alt=""
+              />
+              <img
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 6px)",
+                  right: "12px",
+                  width: "12px",
+                  height: "12px",
+                  overflow: "hidden",
+                  display: "none",
+                }}
                 alt=""
                 src="/12px--navigation--arrow-right.svg"
               />
-              <div className="home-menu-item">
+              <div
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 12px)",
+                  left: "16px",
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "flex-start",
+                  justifyContent: "flex-start",
+                  gap: "16px",
+                  zIndex: "1",
+                }}
+              >
                 <img
-                  className="px-iconly-graph"
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    display: "none",
+                    minHeight: "24px",
+                  }}
                   alt=""
                   src="/24px--iconly--graph.svg"
                 />
                 <img
-                  className="icon-outline-endpoint"
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    minHeight: "24px",
+                  }}
                   loading="lazy"
                   alt=""
                   src="/icon-6.svg"
                 />
-                <div className="home-menu-label">
-                  <div className="tenant-billing">Tenant Billing</div>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "flex-start",
+                    justifyContent: "flex-start",
+                    padding: "1px 0px 0px",
+                  }}
+                >
+                  <div
+                    style={{
+                      position: "relative",
+                      lineHeight: "22px",
+                      fontWeight: "600",
+                      display: "inline-block",
+                      minWidth: "93px",
+                    }}
+                  >
+                    Tenant Billing
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="menu-group">
-          <div className="org">
-            <div className="line1" />
-            <div className="menu-header1">Compute services</div>
-            <div className="dropdown2">
+        <div
+          style={{
+            alignSelf: "stretch",
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "flex-start",
+            justifyContent: "flex-start",
+          }}
+        >
+          <div
+            style={{
+              flex: "1",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "flex-start",
+              justifyContent: "flex-start",
+              gap: "8px",
+            }}
+          >
+            <div
+              style={{
+                alignSelf: "stretch",
+                height: "1px",
+                position: "relative",
+                backgroundColor: "#d9d9d9",
+              }}
+            />
+            <div
+              style={{
+                position: "relative",
+                lineHeight: "22px",
+                fontWeight: "600",
+                color: "#8c8c8c",
+                display: "inline-block",
+                minWidth: "120px",
+              }}
+            >
+              Compute services
+            </div>
+            <div
+              style={{
+                alignSelf: "stretch",
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "flex-start",
+                justifyContent: "space-between",
+                padding: "2px 0px 2px 16px",
+                position: "relative",
+                opacity: "0.75",
+                gap: "20px",
+                textAlign: "center",
+                fontSize: "12px",
+                color: "rgba(24, 24, 25, 0.9)",
+                fontFamily: "Roboto",
+              }}
+            >
               <img
-                className="rectangle-icon"
+                style={{
+                  height: "100%",
+                  width: "100%",
+                  position: "absolute",
+                  margin: "0",
+                  top: "0px",
+                  right: "0px",
+                  bottom: "0px",
+                  left: "0px",
+                  borderRadius: "4px",
+                  maxWidth: "100%",
+                  overflow: "hidden",
+                  maxHeight: "100%",
+                }}
                 alt=""
                 src="/rectangle-683-2.svg"
               />
-              <div className="home-menu-badge">
-                <div className="support-menu-dropdown-item">
-                  <div className="avatar2">
-                    <img className="base-icon10" alt="" src="/base-1.svg" />
-                    <div className="dw2">DW</div>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "flex-start",
+                  justifyContent: "flex-start",
+                  padding: "5px 0px 0px",
+                }}
+              >
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "row",
+                    alignItems: "flex-start",
+                    justifyContent: "flex-start",
+                    gap: "12px",
+                    zIndex: "1",
+                  }}
+                >
+                  <div
+                    style={{
+                      height: "32px",
+                      width: "32px",
+                      position: "relative",
+                      display: "none",
+                    }}
+                  >
+                    <img
+                      style={{
+                        position: "absolute",
+                        height: "100%",
+                        width: "100%",
+                        top: "0%",
+                        right: "0%",
+                        bottom: "0%",
+                        left: "0%",
+                        maxWidth: "100%",
+                        overflow: "hidden",
+                        maxHeight: "100%",
+                      }}
+                      alt=""
+                      src="/base-1.svg"
+                    />
+                    <div
+                      style={{
+                        position: "absolute",
+                        top: "25%",
+                        left: "21.88%",
+                        letterSpacing: "-0.3px",
+                        lineHeight: "140%",
+                        fontWeight: "500",
+                      }}
+                    >
+                      DW
+                    </div>
                   </div>
-                  <div className="support-menu-dropdown-item-con">
-                    <div className="vpc-fci-01-cloud">VPC: FCI-01 Cloud</div>
-                    <div className="general-team2">general team</div>
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      alignItems: "flex-start",
+                      justifyContent: "flex-start",
+                      gap: "1px",
+                      textAlign: "left",
+                      fontSize: "14px",
+                      color: "#595959",
+                      fontFamily: "'Open Sans'",
+                    }}
+                  >
+                    <div
+                      style={{
+                        position: "relative",
+                        lineHeight: "22px",
+                        fontWeight: "600",
+                        display: "inline-block",
+                        minWidth: "118px",
+                      }}
+                    >
+                      VPC: FCI-01 Cloud
+                    </div>
+                    <div
+                      style={{
+                        width: "67px",
+                        position: "relative",
+                        fontSize: "12px",
+                        letterSpacing: "-0.3px",
+                        lineHeight: "140%",
+                        fontWeight: "500",
+                        fontFamily: "Roboto",
+                        color: "rgba(255, 255, 255, 0.42)",
+                        display: "none",
+                      }}
+                    >
+                      general team
+                    </div>
                   </div>
                 </div>
               </div>
-              <div className="button-icon2">
+              <div
+                style={{
+                  height: "32px",
+                  borderRadius: "4px",
+                  overflow: "hidden",
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                  justifyContent: "flex-end",
+                  padding: "11px 7px",
+                  boxSizing: "border-box",
+                  zIndex: "1",
+                }}
+              >
                 <img
-                  className="px-navigation-unfold-more2"
+                  style={{
+                    height: "18px",
+                    width: "18px",
+                    position: "relative",
+                    overflow: "hidden",
+                    flexShrink: "0",
+                  }}
                   alt=""
                   src="/18px--navigation--unfold-more.svg"
                 />
               </div>
             </div>
-            <div className="row">
-              <img className="base-icon9" alt="" />
+            <div
+              style={{
+                alignSelf: "stretch",
+                height: "40px",
+                position: "relative",
+                borderRadius: "10px",
+                overflow: "hidden",
+                flexShrink: "0",
+              }}
+            >
               <img
-                className="px-navigation-arrow-right"
+                style={{
+                  position: "absolute",
+                  height: "100%",
+                  width: "100%",
+                  top: "0px",
+                  right: "0px",
+                  bottom: "0px",
+                  left: "0px",
+                  borderRadius: "10px",
+                  maxWidth: "100%",
+                  overflow: "hidden",
+                  maxHeight: "100%",
+                }}
+                alt=""
+              />
+              <img
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 6px)",
+                  right: "12px",
+                  width: "12px",
+                  height: "12px",
+                  overflow: "hidden",
+                  display: "none",
+                }}
                 alt=""
                 src="/12px--navigation--arrow-right.svg"
               />
-              <div className="home-menu-item">
+              <div
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 12px)",
+                  left: "16px",
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "flex-start",
+                  justifyContent: "flex-start",
+                  gap: "16px",
+                  zIndex: "1",
+                }}
+              >
                 <img
-                  className="px-iconly-graph"
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    display: "none",
+                    minHeight: "24px",
+                  }}
                   alt=""
                   src="/24px--iconly--graph.svg"
                 />
                 <img
-                  className="horizontal-bar-chart-icon"
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    objectFit: "contain",
+                    minHeight: "24px",
+                  }}
                   loading="lazy"
                   alt=""
                   src="/horizontalbarchart-1@2x.png"
                 />
-                <div className="home-menu-label">
-                  <div className="vpc-dashboard">VPC Dashboard</div>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "flex-start",
+                    justifyContent: "flex-start",
+                    padding: "1px 0px 0px",
+                  }}
+                >
+                  <div
+                    style={{
+                      position: "relative",
+                      lineHeight: "22px",
+                      fontWeight: "600",
+                      display: "inline-block",
+                      minWidth: "105px",
+                    }}
+                  >
+                    VPC Dashboard
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="menu">
-              <img className="base-icon3" alt="" />
+            <div
+              style={{
+                alignSelf: "stretch",
+                height: "40px",
+                position: "relative",
+                overflow: "hidden",
+                flexShrink: "0",
+              }}
+            >
               <img
-                className="px-navigation-arrow-right"
+                style={{
+                  position: "absolute",
+                  height: "100%",
+                  width: "100%",
+                  top: "0px",
+                  right: "0px",
+                  bottom: "0px",
+                  left: "0px",
+                  borderRadius: "4px",
+                  maxWidth: "100%",
+                  overflow: "hidden",
+                  maxHeight: "100%",
+                }}
+                alt=""
+              />
+              <img
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 6px)",
+                  right: "12px",
+                  width: "12px",
+                  height: "12px",
+                  overflow: "hidden",
+                  display: "none",
+                }}
                 alt=""
                 src="/12px--navigation--arrow-right.svg"
               />
-              <div className="home-menu-item">
+              <div
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 12px)",
+                  left: "16px",
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "flex-start",
+                  justifyContent: "flex-start",
+                  gap: "16px",
+                  zIndex: "1",
+                }}
+              >
                 <img
-                  className="px-iconly-chat"
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    objectFit: "cover",
+                    display: "none",
+                    minHeight: "24px",
+                  }}
                   alt=""
                   src="/24px--iconly--chat1@2x.png"
                 />
                 <img
-                  className="icon-outline-endpoint"
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    minHeight: "24px",
+                  }}
                   loading="lazy"
                   alt=""
                   src="/icon-6.svg"
                 />
-                <div className="home-menu-label">
-                  <div className="vpc-billing">VPC Billing</div>
-                </div>
-              </div>
-              <img className="icon1" alt="" src="/icon3.svg" />
-            </div>
-            <TextField
-              className="compute-engine-wrapper"
-              variant="standard"
-              select
-              value={1}
-              InputProps={{
-                startAdornment: (
-                  <InputAdornment
-                    position="start"
-                    style={{ marginLeft: "16px", marginRight: "16px" }}
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "flex-start",
+                    justifyContent: "flex-start",
+                    padding: "1px 0px 0px",
+                  }}
+                >
+                  <div
+                    style={{
+                      position: "relative",
+                      lineHeight: "22px",
+                      fontWeight: "600",
+                      display: "inline-block",
+                      minWidth: "72px",
+                    }}
                   >
-                    <img width="24px" height="24px" src="/icon-8.png" />
-                  </InputAdornment>
-                ),
-                endAdornment: (
-                  <InputAdornment
-                    position="end"
-                    style={{ marginRight: "12.399999999999975px" }}
-                  >
-                    <img width="14.5px" height="14px" src="/icon-9.svg" />
-                  </InputAdornment>
-                ),
-              }}
-              SelectProps={{ IconComponent: () => null }}
-              sx={{
-                borderTopWidth: "0px",
-                borderRightWidth: "0px",
-                borderBottomWidth: "0px",
-                borderLeftWidth: "0px",
-                borderRadius: "0px 0px 0px 0px",
-                width: "100%",
-                height: "40px",
-                "& .MuiInput-underline:before": { borderBottom: "none" },
-                "& .MuiInput-underline:after": { borderBottom: "none" },
-                "& .MuiInput-underline:hover:not(.Mui-disabled):before": {
-                  borderBottom: "none",
-                },
-                "& .MuiInputBase-root": { height: "100%" },
-                "& .MuiInputBase-input": {
-                  color: "#595959",
-                  fontSize: 14,
-                  fontWeight: "SemiBold",
-                  fontFamily: "Open Sans",
-                  textAlign: "left",
-                  p: "0 !important",
-                },
-              }}
-            >
-              <MenuItem value={1}>Compute Engine</MenuItem>
-            </TextField>
-            <div className="row-master-wrapper">
-              <div className="row-master">
-                <img className="base-icon3" alt="" />
-                <img
-                  className="px-navigation-arrow-right"
-                  alt=""
-                  src="/12px--navigation--arrow-right.svg"
-                />
-                <div className="px-iconly-chat-container">
-                  <img
-                    className="px-iconly-chat"
-                    alt=""
-                    src="/24px--iconly--chat1@2x.png"
-                  />
-                  <img
-                    className="icon-outline-backup-servic"
-                    alt=""
-                    src="/icon-10@2x.png"
-                  />
-                  <div className="groups">Instances</div>
-                </div>
-              </div>
-            </div>
-            <div className="row-master-wrapper">
-              <div className="row-master">
-                <img className="base-icon3" alt="" />
-                <img
-                  className="px-navigation-arrow-right"
-                  alt=""
-                  src="/12px--navigation--arrow-right.svg"
-                />
-                <div className="px-iconly-chat-container">
-                  <img
-                    className="px-iconly-chat"
-                    alt=""
-                    src="/24px--iconly--chat1@2x.png"
-                  />
-                  <img
-                    className="icon-outline-backup-servic"
-                    alt=""
-                    src="/icon-10@2x.png"
-                  />
-                  <div className="groups">SSH Key Profile</div>
-                </div>
-              </div>
-            </div>
-            <div className="row-master-wrapper">
-              <div className="row-master">
-                <img className="base-icon3" alt="" />
-                <img
-                  className="px-navigation-arrow-right"
-                  alt=""
-                  src="/12px--navigation--arrow-right.svg"
-                />
-                <div className="px-iconly-chat-container">
-                  <img
-                    className="px-iconly-chat"
-                    alt=""
-                    src="/24px--iconly--chat1@2x.png"
-                  />
-                  <img
-                    className="icon-outline-backup-servic"
-                    alt=""
-                    src="/icon-10@2x.png"
-                  />
-                  <div className="groups">Storage Disks</div>
-                </div>
-              </div>
-            </div>
-            <div className="menu3">
-              <img className="base-icon3" alt="" />
-              <img
-                className="px-navigation-arrow-right"
-                alt=""
-                src="/12px--navigation--arrow-right.svg"
-              />
-              <div className="px-iconly-chat-container">
-                <img
-                  className="px-iconly-chat"
-                  alt=""
-                  src="/24px--iconly--chat1@2x.png"
-                />
-                <img
-                  className="icon-outline-backup-servic"
-                  alt=""
-                  src="/icon-10@2x.png"
-                />
-                <div className="groups">{`Backup & Recovery`}</div>
-              </div>
-            </div>
-            <div className="menu3">
-              <img className="base-icon3" alt="" />
-              <img
-                className="px-navigation-arrow-right"
-                alt=""
-                src="/12px--navigation--arrow-right.svg"
-              />
-              <div className="px-iconly-chat-container">
-                <img
-                  className="px-iconly-chat"
-                  alt=""
-                  src="/24px--iconly--chat1@2x.png"
-                />
-                <img
-                  className="icon-outline-backup-servic"
-                  alt=""
-                  src="/icon-10@2x.png"
-                />
-                <div className="groups">Custom Images</div>
-              </div>
-            </div>
-            <div className="row-master-wrapper">
-              <div className="row-master">
-                <img className="base-icon3" alt="" />
-                <img
-                  className="px-navigation-arrow-right"
-                  alt=""
-                  src="/12px--navigation--arrow-right.svg"
-                />
-                <div className="px-iconly-chat-container">
-                  <img
-                    className="px-iconly-chat"
-                    alt=""
-                    src="/24px--iconly--chat1@2x.png"
-                  />
-                  <img
-                    className="icon-outline-backup-servic"
-                    alt=""
-                    src="/icon-10@2x.png"
-                  />
-                  <div className="groups">GPU Services</div>
-                </div>
-              </div>
-            </div>
-            <div className="menu3">
-              <img className="base-icon3" alt="" />
-              <img
-                className="px-navigation-arrow-right"
-                alt=""
-                src="/12px--navigation--arrow-right.svg"
-              />
-              <div className="px-iconly-chat-container">
-                <img
-                  className="px-iconly-chat"
-                  alt=""
-                  src="/24px--iconly--chat1@2x.png"
-                />
-                <img
-                  className="icon-outline-backup-servic"
-                  alt=""
-                  src="/icon-10@2x.png"
-                />
-                <div className="groups">Autoscale Groups</div>
-              </div>
-            </div>
-            <div className="menu3">
-              <img className="base-icon3" alt="" />
-              <img
-                className="px-navigation-arrow-right"
-                alt=""
-                src="/12px--navigation--arrow-right.svg"
-              />
-              <div className="px-iconly-chat-container">
-                <img
-                  className="px-iconly-chat"
-                  alt=""
-                  src="/24px--iconly--chat1@2x.png"
-                />
-                <img
-                  className="icon-outline-backup-servic"
-                  alt=""
-                  src="/icon-10@2x.png"
-                />
-                <div className="groups">Autoscale Profiles</div>
-              </div>
-            </div>
-            <div className="menu3">
-              <img className="base-icon3" alt="" />
-              <img
-                className="px-navigation-arrow-right"
-                alt=""
-                src="/12px--navigation--arrow-right.svg"
-              />
-              <div className="px-iconly-chat-container">
-                <img
-                  className="px-iconly-chat"
-                  alt=""
-                  src="/24px--iconly--chat1@2x.png"
-                />
-                <img
-                  className="icon-outline-backup-servic"
-                  alt=""
-                  src="/icon-10@2x.png"
-                />
-                <div className="groups">Autoscale Policies</div>
-              </div>
-            </div>
-            <div className="row-master-parent">
-              <div className="row-master">
-                <img className="base-icon3" alt="" />
-                <img
-                  className="px-navigation-arrow-right"
-                  alt=""
-                  src="/12px--navigation--arrow-right.svg"
-                />
-                <div className="home-menu-item">
-                  <img
-                    className="px-iconly-chat"
-                    alt=""
-                    src="/24px--iconly--chat1@2x.png"
-                  />
-                  <img
-                    className="icon-outline-endpoint"
-                    loading="lazy"
-                    alt=""
-                    src="/icon-18.svg"
-                  />
-                  <div className="home-menu-label">
-                    <div className="networking">Networking</div>
+                    VPC Billing
                   </div>
                 </div>
               </div>
               <img
-                className="icon24"
+                style={{
+                  position: "absolute",
+                  height: "35%",
+                  width: "6.04%",
+                  top: "32.5%",
+                  right: "5.17%",
+                  bottom: "32.5%",
+                  left: "88.79%",
+                  maxWidth: "100%",
+                  overflow: "hidden",
+                  maxHeight: "100%",
+                  display: "none",
+                }}
+                alt=""
+                src="/icon3.svg"
+              />
+            </div>
+            <Select
+              style={{
+                alignSelf: "stretch",
+                height: "40px",
+                position: "relative",
+                borderRadius: "4px",
+                backgroundColor: "transparent",
+                border: "none",
+                padding: "9px 56px",
+                boxSizing: "border-box",
+                fontFamily: "'Open Sans'",
+                fontWeight: "600",
+                fontSize: "14px",
+                color: "#595959",
+              }}
+            />
+            <div
+              style={{
+                alignSelf: "stretch",
+                height: "40px",
+                position: "relative",
+                display: "none",
+              }}
+            >
+              <div
+                style={{
+                  position: "absolute",
+                  top: "0px",
+                  left: "0px",
+                  width: "100%",
+                  height: "100%",
+                  overflow: "hidden",
+                }}
+              >
+                <img
+                  style={{
+                    position: "absolute",
+                    height: "100%",
+                    width: "100%",
+                    top: "0px",
+                    right: "0px",
+                    bottom: "0px",
+                    left: "0px",
+                    borderRadius: "4px",
+                    maxWidth: "100%",
+                    overflow: "hidden",
+                    maxHeight: "100%",
+                  }}
+                  alt=""
+                />
+                <img
+                  style={{
+                    position: "absolute",
+                    top: "calc(50% - 6px)",
+                    right: "12px",
+                    width: "12px",
+                    height: "12px",
+                    overflow: "hidden",
+                    display: "none",
+                  }}
+                  alt=""
+                  src="/12px--navigation--arrow-right.svg"
+                />
+                <div
+                  style={{
+                    position: "absolute",
+                    top: "calc(50% - 12px)",
+                    left: "16px",
+                    display: "flex",
+                    flexDirection: "row",
+                    alignItems: "center",
+                    justifyContent: "flex-start",
+                    gap: "16px",
+                  }}
+                >
+                  <img
+                    style={{
+                      height: "24px",
+                      width: "24px",
+                      position: "relative",
+                      objectFit: "cover",
+                      display: "none",
+                      minHeight: "24px",
+                    }}
+                    alt=""
+                    src="/24px--iconly--chat1@2x.png"
+                  />
+                  <img
+                    style={{
+                      height: "24px",
+                      width: "24px",
+                      position: "relative",
+                      objectFit: "cover",
+                      minHeight: "24px",
+                    }}
+                    alt=""
+                    src="/icon-10@2x.png"
+                  />
+                  <div
+                    style={{
+                      flex: "1",
+                      position: "relative",
+                      lineHeight: "22px",
+                      fontWeight: "600",
+                    }}
+                  >
+                    Instances
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              style={{
+                alignSelf: "stretch",
+                height: "40px",
+                position: "relative",
+                display: "none",
+              }}
+            >
+              <div
+                style={{
+                  position: "absolute",
+                  top: "0px",
+                  left: "0px",
+                  width: "100%",
+                  height: "100%",
+                  overflow: "hidden",
+                }}
+              >
+                <img
+                  style={{
+                    position: "absolute",
+                    height: "100%",
+                    width: "100%",
+                    top: "0px",
+                    right: "0px",
+                    bottom: "0px",
+                    left: "0px",
+                    borderRadius: "4px",
+                    maxWidth: "100%",
+                    overflow: "hidden",
+                    maxHeight: "100%",
+                  }}
+                  alt=""
+                />
+                <img
+                  style={{
+                    position: "absolute",
+                    top: "calc(50% - 6px)",
+                    right: "12px",
+                    width: "12px",
+                    height: "12px",
+                    overflow: "hidden",
+                    display: "none",
+                  }}
+                  alt=""
+                  src="/12px--navigation--arrow-right.svg"
+                />
+                <div
+                  style={{
+                    position: "absolute",
+                    top: "calc(50% - 12px)",
+                    left: "16px",
+                    display: "flex",
+                    flexDirection: "row",
+                    alignItems: "center",
+                    justifyContent: "flex-start",
+                    gap: "16px",
+                  }}
+                >
+                  <img
+                    style={{
+                      height: "24px",
+                      width: "24px",
+                      position: "relative",
+                      objectFit: "cover",
+                      display: "none",
+                      minHeight: "24px",
+                    }}
+                    alt=""
+                    src="/24px--iconly--chat1@2x.png"
+                  />
+                  <img
+                    style={{
+                      height: "24px",
+                      width: "24px",
+                      position: "relative",
+                      objectFit: "cover",
+                      minHeight: "24px",
+                    }}
+                    alt=""
+                    src="/icon-10@2x.png"
+                  />
+                  <div
+                    style={{
+                      flex: "1",
+                      position: "relative",
+                      lineHeight: "22px",
+                      fontWeight: "600",
+                    }}
+                  >
+                    SSH Key Profile
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              style={{
+                alignSelf: "stretch",
+                height: "40px",
+                position: "relative",
+                display: "none",
+              }}
+            >
+              <div
+                style={{
+                  position: "absolute",
+                  top: "0px",
+                  left: "0px",
+                  width: "100%",
+                  height: "100%",
+                  overflow: "hidden",
+                }}
+              >
+                <img
+                  style={{
+                    position: "absolute",
+                    height: "100%",
+                    width: "100%",
+                    top: "0px",
+                    right: "0px",
+                    bottom: "0px",
+                    left: "0px",
+                    borderRadius: "4px",
+                    maxWidth: "100%",
+                    overflow: "hidden",
+                    maxHeight: "100%",
+                  }}
+                  alt=""
+                />
+                <img
+                  style={{
+                    position: "absolute",
+                    top: "calc(50% - 6px)",
+                    right: "12px",
+                    width: "12px",
+                    height: "12px",
+                    overflow: "hidden",
+                    display: "none",
+                  }}
+                  alt=""
+                  src="/12px--navigation--arrow-right.svg"
+                />
+                <div
+                  style={{
+                    position: "absolute",
+                    top: "calc(50% - 12px)",
+                    left: "16px",
+                    display: "flex",
+                    flexDirection: "row",
+                    alignItems: "center",
+                    justifyContent: "flex-start",
+                    gap: "16px",
+                  }}
+                >
+                  <img
+                    style={{
+                      height: "24px",
+                      width: "24px",
+                      position: "relative",
+                      objectFit: "cover",
+                      display: "none",
+                      minHeight: "24px",
+                    }}
+                    alt=""
+                    src="/24px--iconly--chat1@2x.png"
+                  />
+                  <img
+                    style={{
+                      height: "24px",
+                      width: "24px",
+                      position: "relative",
+                      objectFit: "cover",
+                      minHeight: "24px",
+                    }}
+                    alt=""
+                    src="/icon-10@2x.png"
+                  />
+                  <div
+                    style={{
+                      flex: "1",
+                      position: "relative",
+                      lineHeight: "22px",
+                      fontWeight: "600",
+                    }}
+                  >
+                    Storage Disks
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              style={{
+                alignSelf: "stretch",
+                height: "40px",
+                position: "relative",
+                overflow: "hidden",
+                flexShrink: "0",
+                display: "none",
+              }}
+            >
+              <img
+                style={{
+                  position: "absolute",
+                  height: "100%",
+                  width: "100%",
+                  top: "0px",
+                  right: "0px",
+                  bottom: "0px",
+                  left: "0px",
+                  borderRadius: "4px",
+                  maxWidth: "100%",
+                  overflow: "hidden",
+                  maxHeight: "100%",
+                }}
+                alt=""
+              />
+              <img
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 6px)",
+                  right: "12px",
+                  width: "12px",
+                  height: "12px",
+                  overflow: "hidden",
+                  display: "none",
+                }}
+                alt=""
+                src="/12px--navigation--arrow-right.svg"
+              />
+              <div
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 12px)",
+                  left: "16px",
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                  justifyContent: "flex-start",
+                  gap: "16px",
+                }}
+              >
+                <img
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    objectFit: "cover",
+                    display: "none",
+                    minHeight: "24px",
+                  }}
+                  alt=""
+                  src="/24px--iconly--chat1@2x.png"
+                />
+                <img
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    objectFit: "cover",
+                    minHeight: "24px",
+                  }}
+                  alt=""
+                  src="/icon-10@2x.png"
+                />
+                <div
+                  style={{
+                    flex: "1",
+                    position: "relative",
+                    lineHeight: "22px",
+                    fontWeight: "600",
+                  }}
+                >{`Backup & Recovery`}</div>
+              </div>
+            </div>
+            <div
+              style={{
+                alignSelf: "stretch",
+                height: "40px",
+                position: "relative",
+                overflow: "hidden",
+                flexShrink: "0",
+                display: "none",
+              }}
+            >
+              <img
+                style={{
+                  position: "absolute",
+                  height: "100%",
+                  width: "100%",
+                  top: "0px",
+                  right: "0px",
+                  bottom: "0px",
+                  left: "0px",
+                  borderRadius: "4px",
+                  maxWidth: "100%",
+                  overflow: "hidden",
+                  maxHeight: "100%",
+                }}
+                alt=""
+              />
+              <img
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 6px)",
+                  right: "12px",
+                  width: "12px",
+                  height: "12px",
+                  overflow: "hidden",
+                  display: "none",
+                }}
+                alt=""
+                src="/12px--navigation--arrow-right.svg"
+              />
+              <div
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 12px)",
+                  left: "16px",
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                  justifyContent: "flex-start",
+                  gap: "16px",
+                }}
+              >
+                <img
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    objectFit: "cover",
+                    display: "none",
+                    minHeight: "24px",
+                  }}
+                  alt=""
+                  src="/24px--iconly--chat1@2x.png"
+                />
+                <img
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    objectFit: "cover",
+                    minHeight: "24px",
+                  }}
+                  alt=""
+                  src="/icon-10@2x.png"
+                />
+                <div
+                  style={{
+                    flex: "1",
+                    position: "relative",
+                    lineHeight: "22px",
+                    fontWeight: "600",
+                  }}
+                >
+                  Custom Images
+                </div>
+              </div>
+            </div>
+            <div
+              style={{
+                alignSelf: "stretch",
+                height: "40px",
+                position: "relative",
+                display: "none",
+              }}
+            >
+              <div
+                style={{
+                  position: "absolute",
+                  top: "0px",
+                  left: "0px",
+                  width: "100%",
+                  height: "100%",
+                  overflow: "hidden",
+                }}
+              >
+                <img
+                  style={{
+                    position: "absolute",
+                    height: "100%",
+                    width: "100%",
+                    top: "0px",
+                    right: "0px",
+                    bottom: "0px",
+                    left: "0px",
+                    borderRadius: "4px",
+                    maxWidth: "100%",
+                    overflow: "hidden",
+                    maxHeight: "100%",
+                  }}
+                  alt=""
+                />
+                <img
+                  style={{
+                    position: "absolute",
+                    top: "calc(50% - 6px)",
+                    right: "12px",
+                    width: "12px",
+                    height: "12px",
+                    overflow: "hidden",
+                    display: "none",
+                  }}
+                  alt=""
+                  src="/12px--navigation--arrow-right.svg"
+                />
+                <div
+                  style={{
+                    position: "absolute",
+                    top: "calc(50% - 12px)",
+                    left: "16px",
+                    display: "flex",
+                    flexDirection: "row",
+                    alignItems: "center",
+                    justifyContent: "flex-start",
+                    gap: "16px",
+                  }}
+                >
+                  <img
+                    style={{
+                      height: "24px",
+                      width: "24px",
+                      position: "relative",
+                      objectFit: "cover",
+                      display: "none",
+                      minHeight: "24px",
+                    }}
+                    alt=""
+                    src="/24px--iconly--chat1@2x.png"
+                  />
+                  <img
+                    style={{
+                      height: "24px",
+                      width: "24px",
+                      position: "relative",
+                      objectFit: "cover",
+                      minHeight: "24px",
+                    }}
+                    alt=""
+                    src="/icon-10@2x.png"
+                  />
+                  <div
+                    style={{
+                      flex: "1",
+                      position: "relative",
+                      lineHeight: "22px",
+                      fontWeight: "600",
+                    }}
+                  >
+                    GPU Services
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              style={{
+                alignSelf: "stretch",
+                height: "40px",
+                position: "relative",
+                overflow: "hidden",
+                flexShrink: "0",
+                display: "none",
+              }}
+            >
+              <img
+                style={{
+                  position: "absolute",
+                  height: "100%",
+                  width: "100%",
+                  top: "0px",
+                  right: "0px",
+                  bottom: "0px",
+                  left: "0px",
+                  borderRadius: "4px",
+                  maxWidth: "100%",
+                  overflow: "hidden",
+                  maxHeight: "100%",
+                }}
+                alt=""
+              />
+              <img
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 6px)",
+                  right: "12px",
+                  width: "12px",
+                  height: "12px",
+                  overflow: "hidden",
+                  display: "none",
+                }}
+                alt=""
+                src="/12px--navigation--arrow-right.svg"
+              />
+              <div
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 12px)",
+                  left: "16px",
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                  justifyContent: "flex-start",
+                  gap: "16px",
+                }}
+              >
+                <img
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    objectFit: "cover",
+                    display: "none",
+                    minHeight: "24px",
+                  }}
+                  alt=""
+                  src="/24px--iconly--chat1@2x.png"
+                />
+                <img
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    objectFit: "cover",
+                    minHeight: "24px",
+                  }}
+                  alt=""
+                  src="/icon-10@2x.png"
+                />
+                <div
+                  style={{
+                    flex: "1",
+                    position: "relative",
+                    lineHeight: "22px",
+                    fontWeight: "600",
+                  }}
+                >
+                  Autoscale Groups
+                </div>
+              </div>
+            </div>
+            <div
+              style={{
+                alignSelf: "stretch",
+                height: "40px",
+                position: "relative",
+                overflow: "hidden",
+                flexShrink: "0",
+                display: "none",
+              }}
+            >
+              <img
+                style={{
+                  position: "absolute",
+                  height: "100%",
+                  width: "100%",
+                  top: "0px",
+                  right: "0px",
+                  bottom: "0px",
+                  left: "0px",
+                  borderRadius: "4px",
+                  maxWidth: "100%",
+                  overflow: "hidden",
+                  maxHeight: "100%",
+                }}
+                alt=""
+              />
+              <img
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 6px)",
+                  right: "12px",
+                  width: "12px",
+                  height: "12px",
+                  overflow: "hidden",
+                  display: "none",
+                }}
+                alt=""
+                src="/12px--navigation--arrow-right.svg"
+              />
+              <div
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 12px)",
+                  left: "16px",
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                  justifyContent: "flex-start",
+                  gap: "16px",
+                }}
+              >
+                <img
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    objectFit: "cover",
+                    display: "none",
+                    minHeight: "24px",
+                  }}
+                  alt=""
+                  src="/24px--iconly--chat1@2x.png"
+                />
+                <img
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    objectFit: "cover",
+                    minHeight: "24px",
+                  }}
+                  alt=""
+                  src="/icon-10@2x.png"
+                />
+                <div
+                  style={{
+                    flex: "1",
+                    position: "relative",
+                    lineHeight: "22px",
+                    fontWeight: "600",
+                  }}
+                >
+                  Autoscale Profiles
+                </div>
+              </div>
+            </div>
+            <div
+              style={{
+                alignSelf: "stretch",
+                height: "40px",
+                position: "relative",
+                overflow: "hidden",
+                flexShrink: "0",
+                display: "none",
+              }}
+            >
+              <img
+                style={{
+                  position: "absolute",
+                  height: "100%",
+                  width: "100%",
+                  top: "0px",
+                  right: "0px",
+                  bottom: "0px",
+                  left: "0px",
+                  borderRadius: "4px",
+                  maxWidth: "100%",
+                  overflow: "hidden",
+                  maxHeight: "100%",
+                }}
+                alt=""
+              />
+              <img
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 6px)",
+                  right: "12px",
+                  width: "12px",
+                  height: "12px",
+                  overflow: "hidden",
+                  display: "none",
+                }}
+                alt=""
+                src="/12px--navigation--arrow-right.svg"
+              />
+              <div
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 12px)",
+                  left: "16px",
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                  justifyContent: "flex-start",
+                  gap: "16px",
+                }}
+              >
+                <img
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    objectFit: "cover",
+                    display: "none",
+                    minHeight: "24px",
+                  }}
+                  alt=""
+                  src="/24px--iconly--chat1@2x.png"
+                />
+                <img
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    objectFit: "cover",
+                    minHeight: "24px",
+                  }}
+                  alt=""
+                  src="/icon-10@2x.png"
+                />
+                <div
+                  style={{
+                    flex: "1",
+                    position: "relative",
+                    lineHeight: "22px",
+                    fontWeight: "600",
+                  }}
+                >
+                  Autoscale Policies
+                </div>
+              </div>
+            </div>
+            <div
+              style={{
+                alignSelf: "stretch",
+                height: "40px",
+                position: "relative",
+                color: "#0052cc",
+              }}
+            >
+              <div
+                style={{
+                  position: "absolute",
+                  top: "0px",
+                  left: "0px",
+                  width: "100%",
+                  height: "100%",
+                  overflow: "hidden",
+                }}
+              >
+                <img
+                  style={{
+                    position: "absolute",
+                    height: "100%",
+                    width: "100%",
+                    top: "0px",
+                    right: "0px",
+                    bottom: "0px",
+                    left: "0px",
+                    borderRadius: "4px",
+                    maxWidth: "100%",
+                    overflow: "hidden",
+                    maxHeight: "100%",
+                  }}
+                  alt=""
+                />
+                <img
+                  style={{
+                    position: "absolute",
+                    top: "calc(50% - 6px)",
+                    right: "12px",
+                    width: "12px",
+                    height: "12px",
+                    overflow: "hidden",
+                    display: "none",
+                  }}
+                  alt=""
+                  src="/12px--navigation--arrow-right.svg"
+                />
+                <div
+                  style={{
+                    position: "absolute",
+                    top: "calc(50% - 12px)",
+                    left: "16px",
+                    display: "flex",
+                    flexDirection: "row",
+                    alignItems: "flex-start",
+                    justifyContent: "flex-start",
+                    gap: "16px",
+                    zIndex: "1",
+                  }}
+                >
+                  <img
+                    style={{
+                      height: "24px",
+                      width: "24px",
+                      position: "relative",
+                      objectFit: "cover",
+                      display: "none",
+                      minHeight: "24px",
+                    }}
+                    alt=""
+                    src="/24px--iconly--chat1@2x.png"
+                  />
+                  <img
+                    style={{
+                      height: "24px",
+                      width: "24px",
+                      position: "relative",
+                      minHeight: "24px",
+                    }}
+                    loading="lazy"
+                    alt=""
+                    src="/icon-18.svg"
+                  />
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "flex-start",
+                      justifyContent: "flex-start",
+                      padding: "1px 0px 0px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        position: "relative",
+                        lineHeight: "22px",
+                        fontWeight: "600",
+                        display: "inline-block",
+                        minWidth: "80px",
+                      }}
+                    >
+                      Networking
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img
+                style={{
+                  position: "absolute",
+                  height: "40%",
+                  width: "6.67%",
+                  top: "30%",
+                  right: "4.58%",
+                  bottom: "30%",
+                  left: "88.75%",
+                  maxWidth: "100%",
+                  overflow: "hidden",
+                  maxHeight: "100%",
+                  objectFit: "contain",
+                  zIndex: "2",
+                }}
                 loading="lazy"
                 alt=""
                 src="/icon-19@2x.png"
               />
             </div>
-            <div className="menu">
-              <img className="base-icon3" alt="" />
+            <div
+              style={{
+                alignSelf: "stretch",
+                height: "40px",
+                position: "relative",
+                overflow: "hidden",
+                flexShrink: "0",
+              }}
+            >
               <img
-                className="px-navigation-arrow-right"
+                style={{
+                  position: "absolute",
+                  height: "100%",
+                  width: "100%",
+                  top: "0px",
+                  right: "0px",
+                  bottom: "0px",
+                  left: "0px",
+                  borderRadius: "4px",
+                  maxWidth: "100%",
+                  overflow: "hidden",
+                  maxHeight: "100%",
+                }}
+                alt=""
+              />
+              <img
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 6px)",
+                  right: "12px",
+                  width: "12px",
+                  height: "12px",
+                  overflow: "hidden",
+                  display: "none",
+                }}
                 alt=""
                 src="/12px--navigation--arrow-right.svg"
               />
-              <div className="home-menu-item">
+              <div
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 12px)",
+                  left: "16px",
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "flex-start",
+                  justifyContent: "flex-start",
+                  gap: "16px",
+                  zIndex: "1",
+                }}
+              >
                 <img
-                  className="px-iconly-chat"
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    objectFit: "cover",
+                    display: "none",
+                    minHeight: "24px",
+                  }}
                   alt=""
                   src="/24px--iconly--chat1@2x.png"
                 />
                 <img
-                  className="icon-outline-backup-servic"
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    objectFit: "cover",
+                    minHeight: "24px",
+                  }}
                   loading="lazy"
                   alt=""
                   src="/icon-10@2x.png"
                 />
-                <div className="home-menu-label">
-                  <div className="floating-ip">Floating IP</div>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "flex-start",
+                    justifyContent: "flex-start",
+                    padding: "1px 0px 0px",
+                  }}
+                >
+                  <div
+                    style={{
+                      position: "relative",
+                      lineHeight: "22px",
+                      fontWeight: "600",
+                      display: "inline-block",
+                      minWidth: "71px",
+                    }}
+                  >
+                    Floating IP
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="menu">
-              <img className="base-icon3" alt="" />
+            <div
+              style={{
+                alignSelf: "stretch",
+                height: "40px",
+                position: "relative",
+                overflow: "hidden",
+                flexShrink: "0",
+              }}
+            >
               <img
-                className="px-navigation-arrow-right"
+                style={{
+                  position: "absolute",
+                  height: "100%",
+                  width: "100%",
+                  top: "0px",
+                  right: "0px",
+                  bottom: "0px",
+                  left: "0px",
+                  borderRadius: "4px",
+                  maxWidth: "100%",
+                  overflow: "hidden",
+                  maxHeight: "100%",
+                }}
+                alt=""
+              />
+              <img
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 6px)",
+                  right: "12px",
+                  width: "12px",
+                  height: "12px",
+                  overflow: "hidden",
+                  display: "none",
+                }}
                 alt=""
                 src="/12px--navigation--arrow-right.svg"
               />
-              <div className="home-menu-item">
+              <div
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 12px)",
+                  left: "16px",
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "flex-start",
+                  justifyContent: "flex-start",
+                  gap: "16px",
+                  zIndex: "1",
+                }}
+              >
                 <img
-                  className="px-iconly-chat"
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    objectFit: "cover",
+                    display: "none",
+                    minHeight: "24px",
+                  }}
                   alt=""
                   src="/24px--iconly--chat1@2x.png"
                 />
                 <img
-                  className="icon-outline-backup-servic"
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    objectFit: "cover",
+                    minHeight: "24px",
+                  }}
                   loading="lazy"
                   alt=""
                   src="/icon-10@2x.png"
                 />
-                <div className="home-menu-label">
-                  <div className="security-groups">Security Groups</div>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "flex-start",
+                    justifyContent: "flex-start",
+                    padding: "1px 0px 0px",
+                  }}
+                >
+                  <div
+                    style={{
+                      position: "relative",
+                      lineHeight: "22px",
+                      fontWeight: "600",
+                      display: "inline-block",
+                      minWidth: "108px",
+                    }}
+                  >
+                    Security Groups
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="menu">
-              <img className="base-icon3" alt="" />
+            <div
+              style={{
+                alignSelf: "stretch",
+                height: "40px",
+                position: "relative",
+                overflow: "hidden",
+                flexShrink: "0",
+              }}
+            >
               <img
-                className="px-navigation-arrow-right"
+                style={{
+                  position: "absolute",
+                  height: "100%",
+                  width: "100%",
+                  top: "0px",
+                  right: "0px",
+                  bottom: "0px",
+                  left: "0px",
+                  borderRadius: "4px",
+                  maxWidth: "100%",
+                  overflow: "hidden",
+                  maxHeight: "100%",
+                }}
+                alt=""
+              />
+              <img
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 6px)",
+                  right: "12px",
+                  width: "12px",
+                  height: "12px",
+                  overflow: "hidden",
+                  display: "none",
+                }}
                 alt=""
                 src="/12px--navigation--arrow-right.svg"
               />
-              <div className="home-menu-item">
+              <div
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 12px)",
+                  left: "16px",
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "flex-start",
+                  justifyContent: "flex-start",
+                  gap: "16px",
+                  zIndex: "1",
+                }}
+              >
                 <img
-                  className="px-iconly-chat"
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    objectFit: "cover",
+                    display: "none",
+                    minHeight: "24px",
+                  }}
                   alt=""
                   src="/24px--iconly--chat1@2x.png"
                 />
                 <img
-                  className="icon-outline-backup-servic"
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    objectFit: "cover",
+                    minHeight: "24px",
+                  }}
                   loading="lazy"
                   alt=""
                   src="/icon-10@2x.png"
                 />
-                <div className="home-menu-label">
-                  <div className="load-balancers">Load Balancers</div>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "flex-start",
+                    justifyContent: "flex-start",
+                    padding: "1px 0px 0px",
+                  }}
+                >
+                  <div
+                    style={{
+                      position: "relative",
+                      lineHeight: "22px",
+                      fontWeight: "600",
+                      display: "inline-block",
+                      minWidth: "103px",
+                    }}
+                  >
+                    Load Balancers
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="menu">
-              <img className="base-icon3" alt="" />
+            <div
+              style={{
+                alignSelf: "stretch",
+                height: "40px",
+                position: "relative",
+                overflow: "hidden",
+                flexShrink: "0",
+              }}
+            >
               <img
-                className="px-navigation-arrow-right"
+                style={{
+                  position: "absolute",
+                  height: "100%",
+                  width: "100%",
+                  top: "0px",
+                  right: "0px",
+                  bottom: "0px",
+                  left: "0px",
+                  borderRadius: "4px",
+                  maxWidth: "100%",
+                  overflow: "hidden",
+                  maxHeight: "100%",
+                }}
+                alt=""
+              />
+              <img
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 6px)",
+                  right: "12px",
+                  width: "12px",
+                  height: "12px",
+                  overflow: "hidden",
+                  display: "none",
+                }}
                 alt=""
                 src="/12px--navigation--arrow-right.svg"
               />
-              <div className="home-menu-item">
+              <div
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 12px)",
+                  left: "16px",
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "flex-start",
+                  justifyContent: "flex-start",
+                  gap: "16px",
+                  zIndex: "1",
+                }}
+              >
                 <img
-                  className="px-iconly-chat"
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    objectFit: "cover",
+                    display: "none",
+                    minHeight: "24px",
+                  }}
                   alt=""
                   src="/24px--iconly--chat1@2x.png"
                 />
                 <img
-                  className="icon-outline-backup-servic"
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    objectFit: "cover",
+                    minHeight: "24px",
+                  }}
                   loading="lazy"
                   alt=""
                   src="/icon-10@2x.png"
                 />
-                <div className="home-menu-label">
-                  <div className="certificates">Certificates</div>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "flex-start",
+                    justifyContent: "flex-start",
+                    padding: "1px 0px 0px",
+                  }}
+                >
+                  <div
+                    style={{
+                      position: "relative",
+                      lineHeight: "22px",
+                      fontWeight: "600",
+                      display: "inline-block",
+                      minWidth: "77px",
+                    }}
+                  >
+                    Certificates
+                  </div>
                 </div>
               </div>
             </div>
-            <button className="row-master13">
-              <img className="base-icon3" alt="" />
+            <button
+              style={{
+                cursor: "pointer",
+                border: "none",
+                padding: "0",
+                backgroundColor: "#0052cc",
+                alignSelf: "stretch",
+                height: "40px",
+                position: "relative",
+                borderRadius: "4px",
+                overflow: "hidden",
+                flexShrink: "0",
+              }}
+            >
               <img
-                className="px-navigation-arrow-right"
+                style={{
+                  position: "absolute",
+                  height: "100%",
+                  width: "100%",
+                  top: "0px",
+                  right: "0px",
+                  bottom: "0px",
+                  left: "0px",
+                  borderRadius: "4px",
+                  maxWidth: "100%",
+                  overflow: "hidden",
+                  maxHeight: "100%",
+                }}
+                alt=""
+              />
+              <img
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 6px)",
+                  right: "12px",
+                  width: "12px",
+                  height: "12px",
+                  overflow: "hidden",
+                  display: "none",
+                }}
                 alt=""
                 src="/12px--navigation--arrow-right.svg"
               />
-              <div className="home-menu-item">
+              <div
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 12px)",
+                  left: "16px",
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "flex-start",
+                  justifyContent: "flex-start",
+                  gap: "16px",
+                  zIndex: "1",
+                }}
+              >
                 <img
-                  className="px-iconly-chat"
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    objectFit: "cover",
+                    display: "none",
+                    minHeight: "24px",
+                  }}
                   alt=""
                   src="/24px--iconly--chat1@2x.png"
                 />
                 <img
-                  className="icon-outline-backup-servic"
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    objectFit: "cover",
+                    minHeight: "24px",
+                  }}
                   alt=""
                   src="/icon-10@2x.png"
                 />
-                <div className="home-menu-label">
-                  <div className="vpn-site-to-site">VPN Site-to-Site</div>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "flex-start",
+                    justifyContent: "flex-start",
+                    padding: "1px 0px 0px",
+                  }}
+                >
+                  <div
+                    style={{
+                      position: "relative",
+                      fontSize: "14px",
+                      lineHeight: "22px",
+                      fontWeight: "600",
+                      fontFamily: "'Open Sans'",
+                      color: "#fff",
+                      textAlign: "left",
+                      display: "inline-block",
+                      minWidth: "106px",
+                    }}
+                  >
+                    VPN Site-to-Site
+                  </div>
                 </div>
               </div>
             </button>
-            <div className="menu">
-              <img className="base-icon3" alt="" />
+            <div
+              style={{
+                alignSelf: "stretch",
+                height: "40px",
+                position: "relative",
+                overflow: "hidden",
+                flexShrink: "0",
+              }}
+            >
               <img
-                className="px-navigation-arrow-right"
+                style={{
+                  position: "absolute",
+                  height: "100%",
+                  width: "100%",
+                  top: "0px",
+                  right: "0px",
+                  bottom: "0px",
+                  left: "0px",
+                  borderRadius: "4px",
+                  maxWidth: "100%",
+                  overflow: "hidden",
+                  maxHeight: "100%",
+                }}
+                alt=""
+              />
+              <img
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 6px)",
+                  right: "12px",
+                  width: "12px",
+                  height: "12px",
+                  overflow: "hidden",
+                  display: "none",
+                }}
                 alt=""
                 src="/12px--navigation--arrow-right.svg"
               />
-              <div className="home-menu-item">
+              <div
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 12px)",
+                  left: "16px",
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "flex-start",
+                  justifyContent: "flex-start",
+                  gap: "16px",
+                  zIndex: "1",
+                }}
+              >
                 <img
-                  className="px-iconly-chat"
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    objectFit: "cover",
+                    display: "none",
+                    minHeight: "24px",
+                  }}
                   alt=""
                   src="/24px--iconly--chat1@2x.png"
                 />
                 <img
-                  className="icon-outline-backup-servic"
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    objectFit: "cover",
+                    minHeight: "24px",
+                  }}
                   loading="lazy"
                   alt=""
                   src="/icon-10@2x.png"
                 />
-                <div className="home-menu-label">
-                  <div className="subnets">Subnets</div>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "flex-start",
+                    justifyContent: "flex-start",
+                    padding: "1px 0px 0px",
+                  }}
+                >
+                  <div
+                    style={{
+                      position: "relative",
+                      lineHeight: "22px",
+                      fontWeight: "600",
+                      display: "inline-block",
+                      minWidth: "55px",
+                    }}
+                  >
+                    Subnets
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="menu-group">
-              <TextField
-                className="row-master15"
-                variant="standard"
-                select
-                value={1}
-                InputProps={{
-                  startAdornment: (
-                    <InputAdornment
-                      position="start"
-                      style={{ marginLeft: "16px", marginRight: "16px" }}
-                    >
-                      <img
-                        width="24px"
-                        height="24px"
-                        src="/icon--outline--application.png"
-                      />
-                    </InputAdornment>
-                  ),
-                  endAdornment: (
-                    <InputAdornment
-                      position="end"
-                      style={{ marginRight: "12.399999999999975px" }}
-                    >
-                      <img width="14.5px" height="14px" src="/icon-26.svg" />
-                    </InputAdornment>
-                  ),
-                }}
-                SelectProps={{ IconComponent: () => null }}
-                sx={{
-                  borderTopWidth: "1px",
-                  borderRightWidth: "1px",
-                  borderBottomWidth: "1px",
-                  borderLeftWidth: "1px",
-                  borderRadius: "0px 0px 0px 0px",
-                  width: "100%",
+            <div
+              style={{
+                alignSelf: "stretch",
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "flex-start",
+                justifyContent: "flex-start",
+              }}
+            >
+              <Select
+                style={{
                   height: "40px",
-                  "& .MuiInput-underline:before": { borderBottom: "none" },
-                  "& .MuiInput-underline:after": { borderBottom: "none" },
-                  "& .MuiInput-underline:hover:not(.Mui-disabled):before": {
-                    borderBottom: "none",
-                  },
-                  "& .MuiInputBase-root": { height: "100%" },
-                  "& .MuiInputBase-input": {
-                    color: "#595959",
-                    fontSize: 14,
-                    fontWeight: "SemiBold",
-                    fontFamily: "Open Sans",
-                    textAlign: "left",
-                    p: "0 !important",
-                  },
+                  flex: "1",
+                  borderRadius: "4px",
+                  backgroundColor: "transparent",
+                  border: "none",
+                  overflow: "hidden",
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "flex-start",
+                  justifyContent: "flex-start",
+                  padding: "9px 12px 8px 16px",
+                  boxSizing: "border-box",
+                  fontFamily: "'Open Sans'",
+                  fontWeight: "600",
+                  fontSize: "14px",
+                  color: "#595959",
+                }}
+              />
+            </div>
+            <div
+              style={{
+                alignSelf: "stretch",
+                height: "40px",
+                position: "relative",
+                overflow: "hidden",
+                flexShrink: "0",
+                display: "none",
+              }}
+            >
+              <img
+                style={{
+                  position: "absolute",
+                  height: "100%",
+                  width: "100%",
+                  top: "0px",
+                  right: "0px",
+                  bottom: "0px",
+                  left: "0px",
+                  borderRadius: "4px",
+                  maxWidth: "100%",
+                  overflow: "hidden",
+                  maxHeight: "100%",
+                }}
+                alt=""
+              />
+              <img
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 6px)",
+                  right: "12px",
+                  width: "12px",
+                  height: "12px",
+                  overflow: "hidden",
+                  display: "none",
+                }}
+                alt=""
+                src="/12px--navigation--arrow-right.svg"
+              />
+              <div
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 12px)",
+                  left: "16px",
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                  justifyContent: "flex-start",
+                  gap: "16px",
                 }}
               >
-                <MenuItem value={1}>Container Platform</MenuItem>
-              </TextField>
-            </div>
-            <div className="menu3">
-              <img className="base-icon3" alt="" />
-              <img
-                className="px-navigation-arrow-right"
-                alt=""
-                src="/12px--navigation--arrow-right.svg"
-              />
-              <div className="px-iconly-chat-container">
                 <img
-                  className="px-iconly-chat"
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    objectFit: "cover",
+                    display: "none",
+                    minHeight: "24px",
+                  }}
                   alt=""
                   src="/24px--iconly--chat1@2x.png"
                 />
-                <img className="icon-outline-endpoint" alt="" />
-                <div className="groups">Kubernetes</div>
+                <img
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    minHeight: "24px",
+                  }}
+                  alt=""
+                />
+                <div
+                  style={{
+                    flex: "1",
+                    position: "relative",
+                    lineHeight: "22px",
+                    fontWeight: "600",
+                  }}
+                >
+                  Kubernetes
+                </div>
               </div>
             </div>
-            <div className="menu3">
-              <img className="base-icon3" alt="" />
+            <div
+              style={{
+                alignSelf: "stretch",
+                height: "40px",
+                position: "relative",
+                overflow: "hidden",
+                flexShrink: "0",
+                display: "none",
+              }}
+            >
               <img
-                className="px-navigation-arrow-right"
+                style={{
+                  position: "absolute",
+                  height: "100%",
+                  width: "100%",
+                  top: "0px",
+                  right: "0px",
+                  bottom: "0px",
+                  left: "0px",
+                  borderRadius: "4px",
+                  maxWidth: "100%",
+                  overflow: "hidden",
+                  maxHeight: "100%",
+                }}
+                alt=""
+              />
+              <img
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 6px)",
+                  right: "12px",
+                  width: "12px",
+                  height: "12px",
+                  overflow: "hidden",
+                  display: "none",
+                }}
                 alt=""
                 src="/12px--navigation--arrow-right.svg"
               />
-              <div className="px-iconly-chat-container">
+              <div
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 12px)",
+                  left: "16px",
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                  justifyContent: "flex-start",
+                  gap: "16px",
+                }}
+              >
                 <img
-                  className="px-iconly-chat"
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    objectFit: "cover",
+                    display: "none",
+                    minHeight: "24px",
+                  }}
                   alt=""
                   src="/24px--iconly--chat1@2x.png"
                 />
                 <img
-                  className="icon-outline-backup-servic"
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    objectFit: "cover",
+                    minHeight: "24px",
+                  }}
                   alt=""
                   src="/icon-10@2x.png"
                 />
-                <div className="groups">Database</div>
+                <div
+                  style={{
+                    flex: "1",
+                    position: "relative",
+                    lineHeight: "22px",
+                    fontWeight: "600",
+                  }}
+                >
+                  Database
+                </div>
               </div>
             </div>
-            <div className="menu3">
-              <img className="base-icon3" alt="" />
+            <div
+              style={{
+                alignSelf: "stretch",
+                height: "40px",
+                position: "relative",
+                overflow: "hidden",
+                flexShrink: "0",
+                display: "none",
+              }}
+            >
               <img
-                className="px-navigation-arrow-right"
+                style={{
+                  position: "absolute",
+                  height: "100%",
+                  width: "100%",
+                  top: "0px",
+                  right: "0px",
+                  bottom: "0px",
+                  left: "0px",
+                  borderRadius: "4px",
+                  maxWidth: "100%",
+                  overflow: "hidden",
+                  maxHeight: "100%",
+                }}
+                alt=""
+              />
+              <img
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 6px)",
+                  right: "12px",
+                  width: "12px",
+                  height: "12px",
+                  overflow: "hidden",
+                  display: "none",
+                }}
                 alt=""
                 src="/12px--navigation--arrow-right.svg"
               />
-              <div className="px-iconly-chat-container">
+              <div
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 12px)",
+                  left: "16px",
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                  justifyContent: "flex-start",
+                  gap: "16px",
+                }}
+              >
                 <img
-                  className="px-iconly-chat"
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    objectFit: "cover",
+                    display: "none",
+                    minHeight: "24px",
+                  }}
                   alt=""
                   src="/24px--iconly--chat1@2x.png"
                 />
-                <img className="icon-outline-endpoint" alt="" />
-                <div className="groups">Container Registry</div>
+                <img
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    minHeight: "24px",
+                  }}
+                  alt=""
+                />
+                <div
+                  style={{
+                    flex: "1",
+                    position: "relative",
+                    lineHeight: "22px",
+                    fontWeight: "600",
+                  }}
+                >
+                  Container Registry
+                </div>
               </div>
             </div>
-            <div className="menu3">
-              <img className="base-icon3" alt="" />
+            <div
+              style={{
+                alignSelf: "stretch",
+                height: "40px",
+                position: "relative",
+                overflow: "hidden",
+                flexShrink: "0",
+                display: "none",
+              }}
+            >
               <img
-                className="px-navigation-arrow-right"
+                style={{
+                  position: "absolute",
+                  height: "100%",
+                  width: "100%",
+                  top: "0px",
+                  right: "0px",
+                  bottom: "0px",
+                  left: "0px",
+                  borderRadius: "4px",
+                  maxWidth: "100%",
+                  overflow: "hidden",
+                  maxHeight: "100%",
+                }}
+                alt=""
+              />
+              <img
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 6px)",
+                  right: "12px",
+                  width: "12px",
+                  height: "12px",
+                  overflow: "hidden",
+                  display: "none",
+                }}
                 alt=""
                 src="/12px--navigation--arrow-right.svg"
               />
-              <div className="px-iconly-chat-container">
+              <div
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 12px)",
+                  left: "16px",
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                  justifyContent: "flex-start",
+                  gap: "16px",
+                }}
+              >
                 <img
-                  className="px-iconly-chat"
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    objectFit: "cover",
+                    display: "none",
+                    minHeight: "24px",
+                  }}
                   alt=""
                   src="/24px--iconly--chat1@2x.png"
                 />
                 <img
-                  className="icon-outline-backup-servic"
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    objectFit: "cover",
+                    minHeight: "24px",
+                  }}
                   alt=""
                   src="/icon-10@2x.png"
                 />
-                <div className="groups">Platform Monitor</div>
+                <div
+                  style={{
+                    flex: "1",
+                    position: "relative",
+                    lineHeight: "22px",
+                    fontWeight: "600",
+                  }}
+                >
+                  Platform Monitor
+                </div>
               </div>
             </div>
-            <div className="row-master-group">
-              <div className="row-master">
-                <img className="base-icon3" alt="" />
+            <div
+              style={{
+                alignSelf: "stretch",
+                height: "40px",
+                position: "relative",
+              }}
+            >
+              <div
+                style={{
+                  position: "absolute",
+                  top: "0px",
+                  left: "0px",
+                  width: "100%",
+                  height: "100%",
+                  overflow: "hidden",
+                }}
+              >
                 <img
-                  className="px-navigation-arrow-right"
+                  style={{
+                    position: "absolute",
+                    height: "100%",
+                    width: "100%",
+                    top: "0px",
+                    right: "0px",
+                    bottom: "0px",
+                    left: "0px",
+                    borderRadius: "4px",
+                    maxWidth: "100%",
+                    overflow: "hidden",
+                    maxHeight: "100%",
+                  }}
+                  alt=""
+                />
+                <img
+                  style={{
+                    position: "absolute",
+                    top: "calc(50% - 6px)",
+                    right: "12px",
+                    width: "12px",
+                    height: "12px",
+                    overflow: "hidden",
+                    display: "none",
+                  }}
                   alt=""
                   src="/12px--navigation--arrow-right.svg"
                 />
-                <div className="home-menu-item">
+                <div
+                  style={{
+                    position: "absolute",
+                    top: "calc(50% - 12px)",
+                    left: "16px",
+                    display: "flex",
+                    flexDirection: "row",
+                    alignItems: "flex-start",
+                    justifyContent: "flex-start",
+                    gap: "16px",
+                    zIndex: "1",
+                  }}
+                >
                   <img
-                    className="px-iconly-chat"
+                    style={{
+                      height: "24px",
+                      width: "24px",
+                      position: "relative",
+                      objectFit: "cover",
+                      display: "none",
+                      minHeight: "24px",
+                    }}
                     alt=""
                     src="/24px--iconly--chat1@2x.png"
                   />
                   <img
-                    className="icon-outline-backup-servic"
+                    style={{
+                      height: "24px",
+                      width: "24px",
+                      position: "relative",
+                      objectFit: "cover",
+                      minHeight: "24px",
+                    }}
                     alt=""
                     src="/-firewall@2x.png"
                   />
-                  <div className="home-menu-label">
-                    <div className="subnets">Security</div>
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "flex-start",
+                      justifyContent: "flex-start",
+                      padding: "1px 0px 0px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        position: "relative",
+                        lineHeight: "22px",
+                        fontWeight: "600",
+                        display: "inline-block",
+                        minWidth: "55px",
+                      }}
+                    >
+                      Security
+                    </div>
                   </div>
                 </div>
               </div>
-              <img className="icon31" alt="" src="/icon2@2x.png" />
-              <img className="icon32" alt="" src="/icon1.svg" />
-            </div>
-            <div className="menu3">
-              <img className="base-icon3" alt="" />
               <img
-                className="px-navigation-arrow-right"
+                style={{
+                  position: "absolute",
+                  height: "40%",
+                  width: "6.67%",
+                  top: "30%",
+                  right: "5.83%",
+                  bottom: "30%",
+                  left: "87.5%",
+                  maxWidth: "100%",
+                  overflow: "hidden",
+                  maxHeight: "100%",
+                  objectFit: "contain",
+                  display: "none",
+                }}
+                alt=""
+                src="/icon2@2x.png"
+              />
+              <img
+                style={{
+                  position: "absolute",
+                  height: "35%",
+                  width: "6.04%",
+                  top: "32.5%",
+                  right: "5.17%",
+                  bottom: "32.5%",
+                  left: "88.79%",
+                  maxWidth: "100%",
+                  overflow: "hidden",
+                  maxHeight: "100%",
+                  zIndex: "2",
+                }}
+                alt=""
+                src="/icon1.svg"
+              />
+            </div>
+            <div
+              style={{
+                alignSelf: "stretch",
+                height: "40px",
+                position: "relative",
+                overflow: "hidden",
+                flexShrink: "0",
+                display: "none",
+              }}
+            >
+              <img
+                style={{
+                  position: "absolute",
+                  height: "100%",
+                  width: "100%",
+                  top: "0px",
+                  right: "0px",
+                  bottom: "0px",
+                  left: "0px",
+                  borderRadius: "4px",
+                  maxWidth: "100%",
+                  overflow: "hidden",
+                  maxHeight: "100%",
+                }}
+                alt=""
+              />
+              <img
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 6px)",
+                  right: "12px",
+                  width: "12px",
+                  height: "12px",
+                  overflow: "hidden",
+                  display: "none",
+                }}
                 alt=""
                 src="/12px--navigation--arrow-right.svg"
               />
-              <div className="px-iconly-chat-container">
+              <div
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 12px)",
+                  left: "16px",
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                  justifyContent: "flex-start",
+                  gap: "16px",
+                }}
+              >
                 <img
-                  className="px-iconly-chat"
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    objectFit: "cover",
+                    display: "none",
+                    minHeight: "24px",
+                  }}
                   alt=""
                   src="/24px--iconly--chat1@2x.png"
                 />
-                <img className="icon-outline-endpoint" alt="" />
-                <div className="groups">Cloud WAF</div>
+                <img
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    minHeight: "24px",
+                  }}
+                  alt=""
+                />
+                <div
+                  style={{
+                    flex: "1",
+                    position: "relative",
+                    lineHeight: "22px",
+                    fontWeight: "600",
+                  }}
+                >
+                  Cloud WAF
+                </div>
               </div>
             </div>
-            <div className="menu3">
-              <img className="base-icon3" alt="" />
+            <div
+              style={{
+                alignSelf: "stretch",
+                height: "40px",
+                position: "relative",
+                overflow: "hidden",
+                flexShrink: "0",
+                display: "none",
+              }}
+            >
               <img
-                className="px-navigation-arrow-right"
+                style={{
+                  position: "absolute",
+                  height: "100%",
+                  width: "100%",
+                  top: "0px",
+                  right: "0px",
+                  bottom: "0px",
+                  left: "0px",
+                  borderRadius: "4px",
+                  maxWidth: "100%",
+                  overflow: "hidden",
+                  maxHeight: "100%",
+                }}
+                alt=""
+              />
+              <img
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 6px)",
+                  right: "12px",
+                  width: "12px",
+                  height: "12px",
+                  overflow: "hidden",
+                  display: "none",
+                }}
                 alt=""
                 src="/12px--navigation--arrow-right.svg"
               />
-              <div className="px-iconly-chat-container">
+              <div
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 12px)",
+                  left: "16px",
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                  justifyContent: "flex-start",
+                  gap: "16px",
+                }}
+              >
                 <img
-                  className="px-iconly-chat"
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    objectFit: "cover",
+                    display: "none",
+                    minHeight: "24px",
+                  }}
                   alt=""
                   src="/24px--iconly--chat1@2x.png"
                 />
-                <img className="icon-outline-endpoint" alt="" />
-                <div className="groups">Cloud Guard</div>
+                <img
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    minHeight: "24px",
+                  }}
+                  alt=""
+                />
+                <div
+                  style={{
+                    flex: "1",
+                    position: "relative",
+                    lineHeight: "22px",
+                    fontWeight: "600",
+                  }}
+                >
+                  Cloud Guard
+                </div>
               </div>
             </div>
-            <div className="menu3">
-              <img className="base-icon3" alt="" />
+            <div
+              style={{
+                alignSelf: "stretch",
+                height: "40px",
+                position: "relative",
+                overflow: "hidden",
+                flexShrink: "0",
+                display: "none",
+              }}
+            >
               <img
-                className="px-navigation-arrow-right"
+                style={{
+                  position: "absolute",
+                  height: "100%",
+                  width: "100%",
+                  top: "0px",
+                  right: "0px",
+                  bottom: "0px",
+                  left: "0px",
+                  borderRadius: "4px",
+                  maxWidth: "100%",
+                  overflow: "hidden",
+                  maxHeight: "100%",
+                }}
+                alt=""
+              />
+              <img
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 6px)",
+                  right: "12px",
+                  width: "12px",
+                  height: "12px",
+                  overflow: "hidden",
+                  display: "none",
+                }}
                 alt=""
                 src="/12px--navigation--arrow-right.svg"
               />
-              <div className="px-iconly-chat-container">
-                <img className="icon-outline-endpoint" alt="" />
-                <div className="groups">Activity Log</div>
+              <div
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 12px)",
+                  left: "16px",
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                  justifyContent: "flex-start",
+                  gap: "16px",
+                }}
+              >
+                <img
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    minHeight: "24px",
+                  }}
+                  alt=""
+                />
+                <div
+                  style={{
+                    flex: "1",
+                    position: "relative",
+                    lineHeight: "22px",
+                    fontWeight: "600",
+                  }}
+                >
+                  Activity Log
+                </div>
               </div>
             </div>
-            <div className="row-master-group">
-              <div className="row-master">
-                <img className="base-icon3" alt="" />
+            <div
+              style={{
+                alignSelf: "stretch",
+                height: "40px",
+                position: "relative",
+              }}
+            >
+              <div
+                style={{
+                  position: "absolute",
+                  top: "0px",
+                  left: "0px",
+                  width: "100%",
+                  height: "100%",
+                  overflow: "hidden",
+                }}
+              >
                 <img
-                  className="px-navigation-arrow-right"
+                  style={{
+                    position: "absolute",
+                    height: "100%",
+                    width: "100%",
+                    top: "0px",
+                    right: "0px",
+                    bottom: "0px",
+                    left: "0px",
+                    borderRadius: "4px",
+                    maxWidth: "100%",
+                    overflow: "hidden",
+                    maxHeight: "100%",
+                  }}
+                  alt=""
+                />
+                <img
+                  style={{
+                    position: "absolute",
+                    top: "calc(50% - 6px)",
+                    right: "12px",
+                    width: "12px",
+                    height: "12px",
+                    overflow: "hidden",
+                    display: "none",
+                  }}
                   alt=""
                   src="/12px--navigation--arrow-right.svg"
                 />
-                <div className="home-menu-item">
+                <div
+                  style={{
+                    position: "absolute",
+                    top: "calc(50% - 12px)",
+                    left: "16px",
+                    display: "flex",
+                    flexDirection: "row",
+                    alignItems: "flex-start",
+                    justifyContent: "flex-start",
+                    gap: "16px",
+                    zIndex: "1",
+                  }}
+                >
                   <img
-                    className="px-iconly-chat"
+                    style={{
+                      height: "24px",
+                      width: "24px",
+                      position: "relative",
+                      objectFit: "cover",
+                      display: "none",
+                      minHeight: "24px",
+                    }}
                     alt=""
                     src="/24px--iconly--chat1@2x.png"
                   />
                   <img
-                    className="icon-outline-backup-servic"
+                    style={{
+                      height: "24px",
+                      width: "24px",
+                      position: "relative",
+                      objectFit: "cover",
+                      minHeight: "24px",
+                    }}
                     alt=""
                     src="/icon--outline--endpoint-2@2x.png"
                   />
-                  <div className="home-menu-label">
-                    <div className="floating-ip">API Access</div>
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "flex-start",
+                      justifyContent: "flex-start",
+                      padding: "1px 0px 0px",
+                    }}
+                  >
+                    <div
+                      style={{
+                        position: "relative",
+                        lineHeight: "22px",
+                        fontWeight: "600",
+                        display: "inline-block",
+                        minWidth: "71px",
+                      }}
+                    >
+                      API Access
+                    </div>
                   </div>
                 </div>
               </div>
-              <img className="icon31" alt="" src="/icon2@2x.png" />
-              <img className="icon32" alt="" src="/icon1.svg" />
-            </div>
-            <div className="menu3">
-              <img className="base-icon3" alt="" />
               <img
-                className="px-navigation-arrow-right"
+                style={{
+                  position: "absolute",
+                  height: "40%",
+                  width: "6.67%",
+                  top: "30%",
+                  right: "5.83%",
+                  bottom: "30%",
+                  left: "87.5%",
+                  maxWidth: "100%",
+                  overflow: "hidden",
+                  maxHeight: "100%",
+                  objectFit: "contain",
+                  display: "none",
+                }}
+                alt=""
+                src="/icon2@2x.png"
+              />
+              <img
+                style={{
+                  position: "absolute",
+                  height: "35%",
+                  width: "6.04%",
+                  top: "32.5%",
+                  right: "5.17%",
+                  bottom: "32.5%",
+                  left: "88.79%",
+                  maxWidth: "100%",
+                  overflow: "hidden",
+                  maxHeight: "100%",
+                  zIndex: "2",
+                }}
+                alt=""
+                src="/icon1.svg"
+              />
+            </div>
+            <div
+              style={{
+                alignSelf: "stretch",
+                height: "40px",
+                position: "relative",
+                overflow: "hidden",
+                flexShrink: "0",
+                display: "none",
+              }}
+            >
+              <img
+                style={{
+                  position: "absolute",
+                  height: "100%",
+                  width: "100%",
+                  top: "0px",
+                  right: "0px",
+                  bottom: "0px",
+                  left: "0px",
+                  borderRadius: "4px",
+                  maxWidth: "100%",
+                  overflow: "hidden",
+                  maxHeight: "100%",
+                }}
+                alt=""
+              />
+              <img
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 6px)",
+                  right: "12px",
+                  width: "12px",
+                  height: "12px",
+                  overflow: "hidden",
+                  display: "none",
+                }}
                 alt=""
                 src="/12px--navigation--arrow-right.svg"
               />
-              <div className="px-iconly-chat-container">
+              <div
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 12px)",
+                  left: "16px",
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                  justifyContent: "flex-start",
+                  gap: "16px",
+                }}
+              >
                 <img
-                  className="px-iconly-chat"
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    objectFit: "cover",
+                    display: "none",
+                    minHeight: "24px",
+                  }}
                   alt=""
                   src="/24px--iconly--chat1@2x.png"
                 />
-                <img className="material-symbolshome-outline-icon" alt="" />
-                <div className="groups">API Profiles</div>
+                <img
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    overflow: "hidden",
+                    flexShrink: "0",
+                    minHeight: "24px",
+                  }}
+                  alt=""
+                />
+                <div
+                  style={{
+                    flex: "1",
+                    position: "relative",
+                    lineHeight: "22px",
+                    fontWeight: "600",
+                  }}
+                >
+                  API Profiles
+                </div>
               </div>
             </div>
-            <div className="menu3">
-              <img className="base-icon3" alt="" />
+            <div
+              style={{
+                alignSelf: "stretch",
+                height: "40px",
+                position: "relative",
+                overflow: "hidden",
+                flexShrink: "0",
+                display: "none",
+              }}
+            >
               <img
-                className="px-navigation-arrow-right"
+                style={{
+                  position: "absolute",
+                  height: "100%",
+                  width: "100%",
+                  top: "0px",
+                  right: "0px",
+                  bottom: "0px",
+                  left: "0px",
+                  borderRadius: "4px",
+                  maxWidth: "100%",
+                  overflow: "hidden",
+                  maxHeight: "100%",
+                }}
+                alt=""
+              />
+              <img
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 6px)",
+                  right: "12px",
+                  width: "12px",
+                  height: "12px",
+                  overflow: "hidden",
+                  display: "none",
+                }}
                 alt=""
                 src="/12px--navigation--arrow-right.svg"
               />
-              <div className="px-iconly-chat-container">
+              <div
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 12px)",
+                  left: "16px",
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                  justifyContent: "flex-start",
+                  gap: "16px",
+                }}
+              >
                 <img
-                  className="px-iconly-chat"
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    objectFit: "cover",
+                    display: "none",
+                    minHeight: "24px",
+                  }}
                   alt=""
                   src="/24px--iconly--chat1@2x.png"
                 />
-                <img className="material-symbolshome-outline-icon" alt="" />
-                <div className="groups">Key Vault</div>
+                <img
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    overflow: "hidden",
+                    flexShrink: "0",
+                    minHeight: "24px",
+                  }}
+                  alt=""
+                />
+                <div
+                  style={{
+                    flex: "1",
+                    position: "relative",
+                    lineHeight: "22px",
+                    fontWeight: "600",
+                  }}
+                >
+                  Key Vault
+                </div>
               </div>
             </div>
-            <div className="menu3">
-              <img className="base-icon3" alt="" />
+            <div
+              style={{
+                alignSelf: "stretch",
+                height: "40px",
+                position: "relative",
+                overflow: "hidden",
+                flexShrink: "0",
+                display: "none",
+              }}
+            >
               <img
-                className="px-navigation-arrow-right"
+                style={{
+                  position: "absolute",
+                  height: "100%",
+                  width: "100%",
+                  top: "0px",
+                  right: "0px",
+                  bottom: "0px",
+                  left: "0px",
+                  borderRadius: "4px",
+                  maxWidth: "100%",
+                  overflow: "hidden",
+                  maxHeight: "100%",
+                }}
+                alt=""
+              />
+              <img
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 6px)",
+                  right: "12px",
+                  width: "12px",
+                  height: "12px",
+                  overflow: "hidden",
+                  display: "none",
+                }}
                 alt=""
                 src="/12px--navigation--arrow-right.svg"
               />
-              <div className="px-iconly-chat-container">
+              <div
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 12px)",
+                  left: "16px",
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                  justifyContent: "flex-start",
+                  gap: "16px",
+                }}
+              >
                 <img
-                  className="px-iconly-chat"
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    objectFit: "cover",
+                    display: "none",
+                    minHeight: "24px",
+                  }}
                   alt=""
                   src="/24px--iconly--chat1@2x.png"
                 />
-                <img className="material-symbolshome-outline-icon" alt="" />
-                <div className="tokens">Tokens</div>
+                <img
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    overflow: "hidden",
+                    flexShrink: "0",
+                    minHeight: "24px",
+                  }}
+                  alt=""
+                />
+                <div
+                  style={{
+                    width: "49px",
+                    position: "relative",
+                    lineHeight: "22px",
+                    fontWeight: "600",
+                    display: "inline-block",
+                  }}
+                >
+                  Tokens
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="menu-group">
-          <div className="org">
-            <div className="other-child" />
-            <div className="add-on-services">Add-on services</div>
-            <div className="menu">
-              <img className="base-icon3" alt="" />
+        <div
+          style={{
+            alignSelf: "stretch",
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "flex-start",
+            justifyContent: "flex-start",
+          }}
+        >
+          <div
+            style={{
+              flex: "1",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "flex-start",
+              justifyContent: "flex-start",
+              gap: "8px",
+            }}
+          >
+            <div
+              style={{
+                width: "232px",
+                height: "1px",
+                position: "relative",
+                backgroundColor: "#d9d9d9",
+              }}
+            />
+            <div
+              style={{
+                position: "relative",
+                lineHeight: "22px",
+                fontWeight: "600",
+                color: "#8c8c8c",
+                display: "inline-block",
+                minWidth: "107px",
+              }}
+            >
+              Add-on services
+            </div>
+            <div
+              style={{
+                alignSelf: "stretch",
+                height: "40px",
+                position: "relative",
+                overflow: "hidden",
+                flexShrink: "0",
+              }}
+            >
               <img
-                className="px-navigation-arrow-right"
+                style={{
+                  position: "absolute",
+                  height: "100%",
+                  width: "100%",
+                  top: "0px",
+                  right: "0px",
+                  bottom: "0px",
+                  left: "0px",
+                  borderRadius: "4px",
+                  maxWidth: "100%",
+                  overflow: "hidden",
+                  maxHeight: "100%",
+                }}
+                alt=""
+              />
+              <img
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 6px)",
+                  right: "12px",
+                  width: "12px",
+                  height: "12px",
+                  overflow: "hidden",
+                  display: "none",
+                }}
                 alt=""
                 src="/12px--navigation--arrow-right.svg"
               />
-              <div className="other-menu-item">
+              <div
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 12px)",
+                  left: "16px",
+                  width: "140px",
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "flex-start",
+                  justifyContent: "flex-start",
+                  gap: "16px",
+                  zIndex: "1",
+                }}
+              >
                 <img
-                  className="px-iconly-chat"
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    objectFit: "cover",
+                    display: "none",
+                    minHeight: "24px",
+                  }}
                   alt=""
                   src="/24px--iconly--chat1@2x.png"
                 />
                 <img
-                  className="icon-outline-backup-servic"
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    objectFit: "cover",
+                    minHeight: "24px",
+                  }}
                   alt=""
                   src="/icon--outline--object-storage@2x.png"
                 />
-                <div className="other-menu-item-label">
-                  <div className="object-storage">Object Storage</div>
+                <div
+                  style={{
+                    flex: "1",
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "flex-start",
+                    justifyContent: "flex-start",
+                    padding: "1px 0px 0px",
+                  }}
+                >
+                  <div
+                    style={{
+                      alignSelf: "stretch",
+                      height: "22px",
+                      position: "relative",
+                      lineHeight: "22px",
+                      fontWeight: "600",
+                      display: "inline-block",
+                    }}
+                  >
+                    Object Storage
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="menu">
-              <img className="base-icon3" alt="" />
+            <div
+              style={{
+                alignSelf: "stretch",
+                height: "40px",
+                position: "relative",
+                overflow: "hidden",
+                flexShrink: "0",
+              }}
+            >
               <img
-                className="px-navigation-arrow-right"
+                style={{
+                  position: "absolute",
+                  height: "100%",
+                  width: "100%",
+                  top: "0px",
+                  right: "0px",
+                  bottom: "0px",
+                  left: "0px",
+                  borderRadius: "4px",
+                  maxWidth: "100%",
+                  overflow: "hidden",
+                  maxHeight: "100%",
+                }}
+                alt=""
+              />
+              <img
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 6px)",
+                  right: "12px",
+                  width: "12px",
+                  height: "12px",
+                  overflow: "hidden",
+                  display: "none",
+                }}
                 alt=""
                 src="/12px--navigation--arrow-right.svg"
               />
-              <div className="px-iconly-chat-parent31">
+              <div
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 12px)",
+                  left: "16px",
+                  width: "101px",
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "flex-start",
+                  justifyContent: "flex-start",
+                  gap: "16px",
+                  zIndex: "1",
+                }}
+              >
                 <img
-                  className="px-iconly-chat"
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    objectFit: "cover",
+                    display: "none",
+                    minHeight: "24px",
+                  }}
                   alt=""
                   src="/24px--iconly--chat1@2x.png"
                 />
                 <img
-                  className="icon-outline-backup-servic"
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    objectFit: "cover",
+                    minHeight: "24px",
+                  }}
                   alt=""
                   src="/icon--outline--endpoint-security@2x.png"
                 />
-                <div className="other-menu-item-label">
-                  <div className="object-storage">Cloud VA</div>
+                <div
+                  style={{
+                    flex: "1",
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "flex-start",
+                    justifyContent: "flex-start",
+                    padding: "1px 0px 0px",
+                  }}
+                >
+                  <div
+                    style={{
+                      alignSelf: "stretch",
+                      height: "22px",
+                      position: "relative",
+                      lineHeight: "22px",
+                      fontWeight: "600",
+                      display: "inline-block",
+                    }}
+                  >
+                    Cloud VA
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="menu-group">
-          <div className="org">
-            <div className="other-child" />
-            <div className="support2">Support</div>
-            <div className="row-master-group">
-              <img className="row-icon" alt="" />
-              <img className="base-icon43" alt="" />
-              <div className="helpdesk-row">
+        <div
+          style={{
+            alignSelf: "stretch",
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "flex-start",
+            justifyContent: "flex-start",
+          }}
+        >
+          <div
+            style={{
+              flex: "1",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "flex-start",
+              justifyContent: "flex-start",
+              gap: "8px",
+            }}
+          >
+            <div
+              style={{
+                width: "232px",
+                height: "1px",
+                position: "relative",
+                backgroundColor: "#d9d9d9",
+              }}
+            />
+            <div
+              style={{
+                width: "55px",
+                height: "22px",
+                position: "relative",
+                lineHeight: "22px",
+                fontWeight: "600",
+                color: "#8c8c8c",
+                display: "inline-block",
+              }}
+            >
+              Support
+            </div>
+            <div
+              style={{
+                alignSelf: "stretch",
+                height: "40px",
+                position: "relative",
+              }}
+            >
+              <img
+                style={{
+                  position: "absolute",
+                  top: "0px",
+                  left: "0px",
+                  borderRadius: "4px",
+                  width: "100%",
+                  height: "100%",
+                  overflow: "hidden",
+                }}
+                alt=""
+              />
+              <img
+                style={{
+                  position: "absolute",
+                  height: "100%",
+                  width: "100%",
+                  top: "0px",
+                  right: "0px",
+                  bottom: "0px",
+                  left: "0px",
+                  borderRadius: "4px",
+                  maxWidth: "100%",
+                  overflow: "hidden",
+                  maxHeight: "100%",
+                  zIndex: "1",
+                }}
+                alt=""
+              />
+              <div
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 12px)",
+                  left: "16.6px",
+                  width: "139.7px",
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "flex-start",
+                  justifyContent: "flex-start",
+                  gap: "12px",
+                  zIndex: "2",
+                }}
+              >
                 <img
-                  className="px-iconly-graph"
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    display: "none",
+                    minHeight: "24px",
+                  }}
                   alt=""
                   src="/24px--iconly--graph.svg"
                 />
                 <img
-                  className="horizontal-bar-chart-icon2"
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    objectFit: "contain",
+                    display: "none",
+                    minHeight: "24px",
+                  }}
                   alt=""
                   src="/horizontalbarchart1@2x.png"
                 />
                 <img
-                  className="material-symbolshome-outline-icon"
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    overflow: "hidden",
+                    flexShrink: "0",
+                    minHeight: "24px",
+                  }}
                   alt=""
                   src="/ic-fluent-chat-bubbles-question-24-regular-1.svg"
                 />
-                <div className="helpdesk-wrapper">
-                  <div className="object-storage">Helpdesk</div>
+                <div
+                  style={{
+                    width: "63px",
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "flex-start",
+                    justifyContent: "flex-start",
+                    padding: "1px 0px 0px",
+                    boxSizing: "border-box",
+                  }}
+                >
+                  <div
+                    style={{
+                      alignSelf: "stretch",
+                      height: "22px",
+                      position: "relative",
+                      lineHeight: "22px",
+                      fontWeight: "600",
+                      display: "inline-block",
+                    }}
+                  >
+                    Helpdesk
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="row-master-group">
-              <img className="row-icon" alt="" />
-              <img className="base-icon43" alt="" />
-              <div className="px-iconly-graph-group">
+            <div
+              style={{
+                alignSelf: "stretch",
+                height: "40px",
+                position: "relative",
+              }}
+            >
+              <img
+                style={{
+                  position: "absolute",
+                  top: "0px",
+                  left: "0px",
+                  borderRadius: "4px",
+                  width: "100%",
+                  height: "100%",
+                  overflow: "hidden",
+                }}
+                alt=""
+              />
+              <img
+                style={{
+                  position: "absolute",
+                  height: "100%",
+                  width: "100%",
+                  top: "0px",
+                  right: "0px",
+                  bottom: "0px",
+                  left: "0px",
+                  borderRadius: "4px",
+                  maxWidth: "100%",
+                  overflow: "hidden",
+                  maxHeight: "100%",
+                  zIndex: "1",
+                }}
+                alt=""
+              />
+              <div
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 12px)",
+                  left: "16.6px",
+                  width: "139.7px",
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "flex-start",
+                  justifyContent: "flex-start",
+                  padding: "0px 5px 0px 0px",
+                  boxSizing: "border-box",
+                  gap: "12px",
+                  zIndex: "2",
+                }}
+              >
                 <img
-                  className="px-iconly-graph"
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    display: "none",
+                    minHeight: "24px",
+                  }}
                   alt=""
                   src="/24px--iconly--graph.svg"
                 />
                 <img
-                  className="horizontal-bar-chart-icon2"
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    objectFit: "contain",
+                    display: "none",
+                    minHeight: "24px",
+                  }}
                   alt=""
                   src="/horizontalbarchart1@2x.png"
                 />
                 <img
-                  className="icon-outline-endpoint"
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    minHeight: "24px",
+                  }}
                   alt=""
                   src="/icon--outline--start.svg"
                 />
-                <div className="other-menu-item-label">
-                  <div className="object-storage">Support Ticket</div>
+                <div
+                  style={{
+                    flex: "1",
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "flex-start",
+                    justifyContent: "flex-start",
+                    padding: "1px 0px 0px",
+                  }}
+                >
+                  <div
+                    style={{
+                      alignSelf: "stretch",
+                      height: "22px",
+                      position: "relative",
+                      lineHeight: "22px",
+                      fontWeight: "600",
+                      display: "inline-block",
+                    }}
+                  >
+                    Support Ticket
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="menu">
-              <img className="base-icon3" alt="" />
+            <div
+              style={{
+                alignSelf: "stretch",
+                height: "40px",
+                position: "relative",
+                overflow: "hidden",
+                flexShrink: "0",
+              }}
+            >
               <img
-                className="px-navigation-arrow-right"
+                style={{
+                  position: "absolute",
+                  height: "100%",
+                  width: "100%",
+                  top: "0px",
+                  right: "0px",
+                  bottom: "0px",
+                  left: "0px",
+                  borderRadius: "4px",
+                  maxWidth: "100%",
+                  overflow: "hidden",
+                  maxHeight: "100%",
+                }}
+                alt=""
+              />
+              <img
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 6px)",
+                  right: "12px",
+                  width: "12px",
+                  height: "12px",
+                  overflow: "hidden",
+                  display: "none",
+                }}
                 alt=""
                 src="/12px--navigation--arrow-right.svg"
               />
-              <div className="px-iconly-chat-parent32">
+              <div
+                style={{
+                  position: "absolute",
+                  top: "calc(50% - 12px)",
+                  left: "16px",
+                  width: "149px",
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "flex-start",
+                  justifyContent: "flex-start",
+                  gap: "12px",
+                  zIndex: "1",
+                }}
+              >
                 <img
-                  className="px-iconly-chat"
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    objectFit: "cover",
+                    display: "none",
+                    minHeight: "24px",
+                  }}
                   alt=""
                   src="/24px--iconly--chat1@2x.png"
                 />
-                <img className="px-iconly-graph" alt="" src="/icon4.svg" />
                 <img
-                  className="icon-outline-endpoint"
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    display: "none",
+                    minHeight: "24px",
+                  }}
+                  alt=""
+                  src="/icon4.svg"
+                />
+                <img
+                  style={{
+                    height: "24px",
+                    width: "24px",
+                    position: "relative",
+                    minHeight: "24px",
+                  }}
                   alt=""
                   src="/icon--outline--documents.svg"
                 />
-                <div className="other-menu-item-label">
-                  <div className="object-storage">Documentations</div>
+                <div
+                  style={{
+                    flex: "1",
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "flex-start",
+                    justifyContent: "flex-start",
+                    padding: "1px 0px 0px",
+                  }}
+                >
+                  <div
+                    style={{
+                      alignSelf: "stretch",
+                      height: "22px",
+                      position: "relative",
+                      lineHeight: "22px",
+                      fontWeight: "600",
+                      display: "inline-block",
+                    }}
+                  >
+                    Documentations
+                  </div>
                 </div>
               </div>
-              <img className="icon38" alt="" src="/icon5@2x.png" />
+              <img
+                style={{
+                  position: "absolute",
+                  height: "35%",
+                  width: "6.04%",
+                  top: "32.5%",
+                  right: "5.17%",
+                  bottom: "32.5%",
+                  left: "88.79%",
+                  maxWidth: "100%",
+                  overflow: "hidden",
+                  maxHeight: "100%",
+                  objectFit: "contain",
+                  display: "none",
+                }}
+                alt=""
+                src="/icon5@2x.png"
+              />
             </div>
           </div>
         </div>

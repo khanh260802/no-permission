@@ -1,10 +1,18 @@
 import PropTypes from "prop-types";
-import "./EmptyIllustration.css";
 
 const EmptyIllustration = ({ className = "" }) => {
   return (
     <img
-      className={`empty-illustration-icon ${className}`}
+      style={{
+        position: "absolute",
+        top: "28px",
+        left: "508px",
+        width: "120px",
+        height: "180px",
+        overflow: "hidden",
+        zIndex: "1",
+      }}
+      className={className}
       loading="lazy"
       alt=""
       src="/empty-illustration.svg"

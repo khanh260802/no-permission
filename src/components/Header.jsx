@@ -1,169 +1,112 @@
-import {
-  Select,
-  InputLabel,
-  MenuItem,
-  FormHelperText,
-  FormControl,
-  InputAdornment,
-} from "@mui/material";
 import PropTypes from "prop-types";
-import "./Header.css";
 
 const Header = ({ className = "" }) => {
   return (
-    <header className={`header ${className}`}>
-      <div className="breadcrumbs-container">
-        <div className="breadcrumb-icon-parent">
+    <header
+      style={{
+        alignSelf: "stretch",
+        backgroundColor: "#0052cc",
+        display: "flex",
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "space-between",
+        padding: "0px 15px 0px 0px",
+        boxSizing: "border-box",
+        maxWidth: "100%",
+        gap: "20px",
+      }}
+      className={className}
+    >
+      <div
+        style={{
+          width: "553.7px",
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "center",
+          justifyContent: "flex-start",
+          gap: "33px",
+          maxWidth: "100%",
+        }}
+      >
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "center",
+            justifyContent: "flex-start",
+            gap: "20px",
+          }}
+        >
           <img
-            className="breadcrumb-icon"
+            style={{ height: "60px", width: "60px", position: "relative" }}
             loading="lazy"
             alt=""
             src="/frame-626521.svg"
           />
           <img
-            className="layer-1-icon"
+            style={{ height: "32px", width: "180px", position: "relative" }}
             loading="lazy"
             alt=""
             src="/layer-1.svg"
           />
         </div>
-        <div className="page-title-container-parent">
-          <FormControl
-            className="page-title-container"
-            variant="standard"
-            sx={{
-              borderTopWidth: "1px",
-              borderRightWidth: "1px",
-              borderBottomWidth: "1px",
-              borderLeftWidth: "1px",
-              backgroundColor: "rgba(255, 255, 255, 0.15)",
-              borderRadius: "4px",
-              width: "100%",
+        <div
+          style={{
+            flex: "1",
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "flex-start",
+            justifyContent: "flex-start",
+            gap: "13px",
+            minWidth: "170px",
+          }}
+        >
+          <Select
+            style={{
               height: "38px",
-              m: 0,
-              p: 0,
-              "& .MuiInputBase-root": {
-                m: 0,
-                p: 0,
-                minHeight: "38px",
-                justifyContent: "center",
-                display: "inline-flex",
-              },
-              "& .MuiInputLabel-root": {
-                m: 0,
-                p: 0,
-                minHeight: "38px",
-                display: "inline-flex",
-              },
-              "& .MuiMenuItem-root": {
-                m: 0,
-                p: 0,
-                height: "38px",
-                display: "inline-flex",
-              },
-              "& .MuiSelect-select": {
-                m: 0,
-                p: 0,
-                height: "38px",
-                alignItems: "center",
-                display: "inline-flex",
-              },
-              "& .MuiInput-input": { m: 0, p: 0 },
-              "& .MuiInputBase-input": {
-                color: "#fff",
-                fontSize: 14,
-                fontWeight: "Regular",
-                fontFamily: "Open Sans",
-                textAlign: "left",
-                p: "0 !important",
-                marginLeft: "15px",
-              },
+              flex: "1",
+              borderRadius: "4px",
+              backgroundColor: "rgba(255, 255, 255, 0.15)",
+              border: "none",
+              display: "flex",
+              flexDirection: "row",
+              alignItems: "center",
+              justifyContent: "center",
+              padding: "0px 5px 0px 15px",
+              boxSizing: "border-box",
+              fontFamily: "'Open Sans'",
+              fontSize: "14px",
+              color: "#fff",
             }}
-          >
-            <InputLabel color="secondary" />
-            <Select
-              color="secondary"
-              disableUnderline
-              displayEmpty
-              IconComponent={() => (
-                <img
-                  width="30.7px"
-                  height="24px"
-                  src="/page-title-actions.svg"
-                  style={{ marginRight: "4.999999999999989px" }}
-                />
-              )}
-            >
-              <MenuItem>Tenant: 000039-i1tenant</MenuItem>
-            </Select>
-            <FormHelperText />
-          </FormControl>
-          <div className="frame-child" />
+          />
+          <div
+            style={{
+              height: "38px",
+              width: "226px",
+              borderRadius: "4px",
+              backgroundColor: "rgba(255, 255, 255, 0.15)",
+              display: "none",
+            }}
+          />
         </div>
       </div>
-      <FormControl
-        className="parent"
-        variant="standard"
-        sx={{
-          borderTopWidth: "1px",
-          borderRightWidth: "1px",
-          borderBottomWidth: "1px",
-          borderLeftWidth: "1px",
-          borderRadius: "0px 0px 0px 0px",
-          width: "86px",
+      <Select
+        style={{
           height: "60px",
-          m: 0,
-          p: 0,
-          "& .MuiInputBase-root": {
-            m: 0,
-            p: 0,
-            minHeight: "60px",
-            justifyContent: "center",
-            display: "inline-flex",
-          },
-          "& .MuiInputLabel-root": {
-            m: 0,
-            p: 0,
-            minHeight: "60px",
-            display: "inline-flex",
-          },
-          "& .MuiMenuItem-root": {
-            m: 0,
-            p: 0,
-            height: "60px",
-            display: "inline-flex",
-          },
-          "& .MuiSelect-select": {
-            m: 0,
-            p: 0,
-            height: "60px",
-            alignItems: "center",
-            display: "inline-flex",
-          },
-          "& .MuiInput-input": { m: 0, p: 0 },
-          "& .MuiInputBase-input": {
-            color: "#fff",
-            fontSize: 13,
-            fontWeight: "Regular",
-            fontFamily: "Open Sans",
-            textAlign: "left",
-            p: "0 !important",
-          },
+          width: "86px",
+          backgroundColor: "transparent",
+          border: "none",
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "center",
+          justifyContent: "flex-start",
+          padding: "19px 0px",
+          boxSizing: "border-box",
+          fontFamily: "'Open Sans'",
+          fontSize: "13px",
+          color: "#fff",
         }}
-      >
-        <InputLabel color="primary" />
-        <Select
-          color="primary"
-          disableUnderline
-          displayEmpty
-          IconComponent={() => (
-            <img width="24px" height="24px" src="/frame-1.svg" style={{}} />
-          )}
-        >
-          <MenuItem>AnhTTV19</MenuItem>
-        </Select>
-        <FormHelperText />
-      </FormControl>
+      />
     </header>
   );
 };
